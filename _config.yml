@@ -23,7 +23,7 @@ repository               : # "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "circle_pic2.png"
+  avatar           : "prof_pic.png"
   name             : "Mingyu (Ben) Kim"
   pronouns         : # example: "she/her"  
   bio              : "Assistant Professor at GS"
