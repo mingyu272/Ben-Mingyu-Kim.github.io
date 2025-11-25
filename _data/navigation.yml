@@ -9,13 +9,13 @@
 
 main:
   - title: "CV"
-    url: /files/CV Ben Mingyu Kim.pdf
+    url: /files/CV.pdf
     
   - title: "Research"
     url: /portfolio/
 
   - title: "Publications"
-    url: /publications/
+    url: https://scholar.google.com/citations?user=4v3qNoMAAAAJ&hl=en
 
   - title: "Talks"
     url: /talks/    
