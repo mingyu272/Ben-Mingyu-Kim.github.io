@@ -26,7 +26,7 @@ author:
   avatar           : "circle_pic2.png"
   name             : "Mingyu (Ben) Kim"
   pronouns         : # example: "she/her"  
-  bio              : "Multi-robots Scientists (Assistant Professor at GS)"
+  bio              : "Multi-robot Scientist (Assistant Professor at GS)"
   location         : "Statesboro, GA, USA"
   employer         : "Georgia Southern University (GS)"
   uri              : # URL
@@ -63,7 +63,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : 'linkedin.com/in/mingyu-kim-b56303b7/?skipRedirect=true'
+  linkedin         : 'https://www.linkedin.com/in/mingyu-kim-b56303b7/?skipRedirect=true'
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
