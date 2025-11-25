@@ -1,20 +1,11 @@
 ---
-title: "Teaching experience 2"
+title: "Control System"
 collection: teaching
-type: "Workshop"
+type: "Graduate Course"
 permalink: /teaching/2015-spring-teaching-1
-venue: "University 1, Department"
-date: 2015-01-01
-location: "City, Country"
+venue: "Georgia Southern University, Electricla and Computer EngineeringDepartment"
+date: 2025-11-25
+location: "Statesboro, GA, USA"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
-
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
+Introduction to classical control theory and applications is presented with emphasis on feedback and its properties including the concept of stability, stability margins, and the different tools that can be used to analyze the system properties. Students will develop a working knowledge of the basic elements of linear control techniques. The course also includes laboratory activities in support of instruction. Prerequisite(s): A minimum grade of "C" in EENG 3420 or Permission of Instructor. Cross Listing(s): EENG 5431G.
