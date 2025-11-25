@@ -1,5 +1,5 @@
 ---
-title: "Control System"
+title: "Control System (EENG 5431)"
 collection: teaching
 type: "Graduate Course"
 permalink: /teaching/2015-spring-teaching-1
