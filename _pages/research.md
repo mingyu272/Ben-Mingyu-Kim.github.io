@@ -1,7 +1,6 @@
-
 ---
 title: "Research"
-permalink: /research/
+permalink: research/
 layout: single
 author_profile: true
 ---
@@ -15,7 +14,7 @@ The work spans three core areas that integrate robotics, sensing, and applied st
 
 ## 1. Multi-Robot Coordination & Real-Time Decision-Making
 
-<img src="/images/research1.jpg" width="100%" style="border-radius:8px; margin-top:10px; margin-bottom:15px;"/>
+<img src="{{ site.baseurl }}/images/research1.jpg" width="100%" style="border-radius:8px; margin-top:10px; margin-bottom:15px;"/>
 
 I design algorithms that enable heterogeneous teams of robots—drones, surface vessels, underwater vehicles, and fixed sensors—to collaborate efficiently in dynamic, data-limited settings.  
 This work includes:
