@@ -7,7 +7,7 @@ author_profile: true
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/mingyu272/Ben-Mingyu-Kim.github.io/master/images/armor-logo3.png"
-       alt="ARMOR Lab Logo" width="260">
+       alt="ARMOR Lab Logo" width="560">
 </p>
 
 
