@@ -7,7 +7,7 @@ author_profile: true
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/mingyu272/Ben-Mingyu-Kim.github.io/master/images/armor-logo3.png"
-       alt="ARMOR Lab Logo" width="560">
+       alt="ARMOR Lab Logo" width="500">
 </p>
 
 
@@ -15,7 +15,8 @@ author_profile: true
 
 ## Research Visions
 
-I, Mingyu (Ben) Kim, am an Assistant Professor in the Department of Electrical and Computer Engineering at Georgia Southern University.  
+I am Mingyu (Ben) Kim, an Assistant Professor in the Department of Electrical and Computer Engineering at Georgia Southern University.  
+
 My research focuses on **multi-robot systems**, **sensor networks**, **probabilistic modeling**, and **real-time optimization under uncertainty**. I develop algorithms that enable autonomous systems to sense, learn, and make decisions efficiently in dynamic and uncertain environments.
 
 My work spans applications in:
