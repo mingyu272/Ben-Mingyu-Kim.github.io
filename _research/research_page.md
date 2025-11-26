@@ -6,31 +6,53 @@ layout: single
 
 # Research Overview
 
-My research focuses on developing real-time, probabilistic, and optimization-based algorithms for autonomous systems operating in uncertain and dynamic environments.  
-The three primary areas of my work are:
+My research develops real-time, probabilistic, and optimization-based algorithms for autonomous systems operating in uncertain and dynamic environments.  
+The work spans three core areas that integrate robotics, sensing, and applied stochastic modeling.
 
 ---
 
-## 1. Multi-Robot Coordination & Real-Time Decision-Making  
+## 1. Multi-Robot Coordination & Real-Time Decision-Making
+
 <img src="/images/research1.jpg" width="100%" style="border-radius:8px; margin-top:10px; margin-bottom:15px;"/>
 
-I develop algorithms that enable heterogeneous teams of robots—drones, surface vessels, and sensors—to operate efficiently in dynamic environments.  
-Key themes include cooperative planning, distributed control, task allocation, and real-time mission adaptation. This work supports applications in ocean monitoring, disaster response, and environmental intelligence.
+I design algorithms that enable heterogeneous teams of robots—drones, surface vessels, underwater vehicles, and fixed sensors—to collaborate efficiently in dynamic, data-limited settings.  
+This work includes:
+
+- Cooperative mission planning  
+- Distributed control and communication  
+- Task allocation for mixed robot teams  
+- Real-time adaptation under uncertainty  
+
+These methods support large-area ocean monitoring, maritime surveillance, and rapid decision-making for disaster and environmental response.
 
 ---
 
 ## 2. Probabilistic Modeling for Sensing & Outlier Detection
 
-I create stochastic models to characterize uncertain target arrivals using Poisson processes and log-Gaussian Cox processes (LGCP).  
-These methods allow autonomous systems to identify atypical or anomalous behaviors in real time, enabling early detection of unusual activity such as abnormal vessel traffic, marine mammal movement, or environmental disturbances.
+I develop stochastic modeling frameworks to characterize uncertain target arrivals and environmental processes using **Poisson processes** and **log-Gaussian Cox processes (LGCP)**.  
+These models enable autonomous systems to:
+
+- Detect atypical or anomalous activity  
+- Quantify uncertainty in arrival patterns  
+- Fuse heterogeneous environmental and sensor data  
+- Improve robustness against rare, transient, or unexpected events  
+
+Examples include identifying abnormal vessel traffic, unusual marine animal movement, and environmental anomalies in coastal regions.
 
 ---
 
 ## 3. Optimal Sensor Networks & Adaptive Placement
 
-I design near-optimal sensor placement strategies that maximize detection performance under uncertainty.  
-Using void-probability approximations, variance-aware optimization, and real-time adaptive repositioning, this work improves the ability of distributed sensor networks—fixed or mobile—to detect rare, transient, or spatially-variable targets in complex marine environments.
+I design optimization methods for deploying fixed and mobile sensor networks that maximize detection performance in uncertain environments.  
+My work incorporates:
+
+- Void-probability and variance-aware approximations  
+- Real-time, near-optimal repositioning algorithms  
+- Distributed sensing strategies for multi-robot teams  
+- Adaptive coverage of spatially variable or dynamic regions  
+
+These approaches enhance the capability of autonomous sensing systems to detect rare events and support persistent monitoring in complex marine environments.
 
 ---
 
-If you would like to learn more, please visit the **Publications** or **Talks** sections of this site.
+If you would like to learn more about current projects and results, please visit the **Publications** or **Talks** sections of this site.
