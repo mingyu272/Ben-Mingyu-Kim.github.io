@@ -23,9 +23,7 @@ repository               : # "https://mingyu272.github.io/Ben-Mingyu-Kim.github.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : <p align="center">  <img src="https://raw.githubusercontent.com/mingyu272/Ben-Mingyu-Kim.github.io/master/images/circle_pic2.png"
-       alt="Circle pic 2" width="180"> </p>
-
+  avatar: "<img src='https://raw.githubusercontent.com/mingyu272/Ben-Mingyu-Kim.github.io/master/images/circle_pic2.png' alt='Circle pic 2' style='width:180px;border-radius:50%;display:block;margin:auto;'>"
   name             : "Mingyu (Ben) Kim"
   pronouns         : # example: "she/her"  
   bio              : "Assistant Professor at GS"
