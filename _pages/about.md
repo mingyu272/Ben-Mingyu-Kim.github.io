@@ -6,7 +6,8 @@ author_profile: true
 
 
 <p align="center">
-  <img src="{{ '/images/armor-logo.png' | relative_url }}" alt="ARMOR Lab logo" width="260">
+  <img src="https://raw.githubusercontent.com/mingyu272/Ben-Mingyu-Kim.github.io/master/images/armor-logo.png"
+       alt="ARMOR Lab Logo" width="260">
 </p>
 
 
