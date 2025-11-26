@@ -10,5 +10,4 @@ location: "Statesboro, GA, USA"
 
 
 ## Course Description
-======
 The principles of robotics are introduced with emphasis on mobile robots and applications. Topics include robot systems base mechanical movement, sensor interfacing, robot navigation techniques and path planning. Students will work in teams to design and build mobile robotic systems for different applications. The course also includes laboratory activities in support of instruction. Prerequisite(s):A minimum grade of "C" in (EENG 3340 and EENG 3341) or MENG 3521 or Permission of Instructor. Cross Listing(s): EENG 5341G.
