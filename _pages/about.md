@@ -1,12 +1,12 @@
 ---
 permalink: /
-title: "Mingyu (Ben) Kim"
+title: "Welcome to the Autonomous Robotics & Multi-agent Operations Research (ARMOR) Lab! "
 author_profile: true
 ---
 
-## Welcome
+## Research Visions
 
-I am an Assistant Professor in the Department of Electrical and Computer Engineering at Georgia Southern University.  
+I, Mingyu (Ben) Kim, am an Assistant Professor in the Department of Electrical and Computer Engineering at Georgia Southern University.  
 My research focuses on **multi-robot systems**, **sensor networks**, **probabilistic modeling**, and **real-time optimization under uncertainty**. I develop algorithms that enable autonomous systems to sense, learn, and make decisions efficiently in dynamic and uncertain environments.
 
 My work spans applications in:
@@ -61,7 +61,7 @@ A full list of publications, talks, teaching materials, and ongoing projects can
 
 ## Opportunities for Students
 
-I am **actively recruiting motivated Master’s and Ph.D. students** interested in robotics, optimization, and sensing systems.
+I am **actively recruiting motivated Master’s and Ph.D. students** interested in statistics, robotics, optimization, and sensing systems.
 
 Students in my group will gain experience in:
 - ROS2, PX4, Python, MATLAB, C++  
