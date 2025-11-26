@@ -36,18 +36,6 @@ This talk presents stochastic modeling approaches and heuristic optimization tec
 
 The seminar highlights recent advances from projects supported by the Office of Naval Research, demonstrating how probabilistic methods and decision-making frameworks can be adapted to the complexities of marine environments. Opportunities for integrating these approaches with oceanographic sensing platforms are also discussed, including applications in harmful algal bloom detection, vessel tracking, and climate-driven habitat monitoring.
 
----
-
-## Speaker Biography
-
-**Mingyu (Ben) Kim, Ph.D.**  
-Assistant Professor  
-Electrical and Computer Engineering  
-Georgia Southern University  
-
-Dr. Kim’s work focuses on stochastic process modeling, optimization, and multi-robot operational systems, with an emphasis on real-time and near-optimal decision-making in uncertain and dynamic environments. He earned his B.S. and M.S. in Electrical and Computer Engineering from Georgia Tech in 2016 and 2020, and his Ph.D. from Virginia Tech in 2025.
-
-During his doctoral research, he led multiple projects funded by the Office of Naval Research on sensor-network optimization for detecting uncertain and transient targets. His broader research interests include multi-robot coordination, distributed optimization, marine autonomy, and environmental sensing.
 
 ---
 
