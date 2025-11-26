@@ -4,6 +4,14 @@ title: "Welcome to the Autonomous Robotics & Multi-agent Operations Research (AR
 author_profile: true
 ---
 
+
+<p align="center">
+  <img src="{{ '/images/armor-logo.png' | relative_url }}" alt="ARMOR Lab logo" width="260">
+</p>
+
+
+
+
 ## Research Visions
 
 I, Mingyu (Ben) Kim, am an Assistant Professor in the Department of Electrical and Computer Engineering at Georgia Southern University.  
