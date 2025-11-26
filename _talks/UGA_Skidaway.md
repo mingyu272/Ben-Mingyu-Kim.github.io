@@ -8,7 +8,11 @@ date: 2025-09-08
 location: "Savannah, GA, USA"
 ---
 
-##
+
+# IMPORTANT:
+# This hides the body content on the talks list page.
+excerpt: ""
+---
 
 ## Talk Information
 
