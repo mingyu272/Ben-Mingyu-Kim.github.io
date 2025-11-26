@@ -12,7 +12,7 @@ main:
     url: /files/CV.pdf
     
   - title: "Research"
-    url: /portfolio/
+    url: /research/
 
   - title: "Publications"
     url: https://scholar.google.com/citations?user=4v3qNoMAAAAJ&hl=en
