@@ -6,8 +6,6 @@ permalink: /teaching/2015-spring-teaching-1
 venue: "Georgia Southern University, Electrical and Computer Engineering Department"
 date: 2025-11-25
 location: "Statesboro, GA, USA"
----
-
 
 # IMPORTANT:
 # This hides the body content on the talks list page.
