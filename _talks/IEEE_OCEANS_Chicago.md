@@ -6,9 +6,11 @@ permalink: /talks/2025-oceans-chi-mingyu-kim
 venue: "IEEE OCEANS 2025 – Great Lakes"
 date: 2025-09-29
 location: "Navy Pier, Chicago, IL, USA"
----
 
-## 
+# IMPORTANT:
+# This hides the body content on the talks list page.
+excerpt: ""
+---
 
 ## Conference Information
 
@@ -55,9 +57,7 @@ This conference version focuses on the **outlier detection extension** and the *
 
 ## Citation
 
-**M. Kim**, D. J. Stilwell, and J. Jimenez,  
+**M. Kim**, **D. J. Stilwell**, and **J. Jimenez**,  
 “*Outlier Detection of Poisson-Distributed Targets Using a Seabed Sensor Network*,”  
 presented at **IEEE OCEANS 2025**, Chicago, IL.
-
----
 
