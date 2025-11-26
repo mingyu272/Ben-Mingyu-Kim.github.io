@@ -24,8 +24,7 @@ repository               : # "https://mingyu272.github.io/Ben-Mingyu-Kim.github.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
-  # Biographic information
-  avatar: "/Ben-Mingyu-Kim.github.io/images/circle_pic2.png"
+  avatar: "https://raw.githubusercontent.com/mingyu272/Ben-Mingyu-Kim.github.io/master/images/circle_pic2.png"
   name             : "Mingyu (Ben) Kim"
   pronouns         : # example: "she/her"  
   bio              : "Assistant Professor at GS"
