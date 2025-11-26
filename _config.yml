@@ -12,7 +12,7 @@ site_theme               : "default" # Currently available options are "default"
 title                    : "ARMOR LAB"
 title_separator          : "-"
 name                     : &name "Ben Kim"
-description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Your Name's academic research"   # Update this with a general description of your site, this is the default if not overridden by a page
 #url                      : https://mingyu272.github.io/Ben-Mingyu-Kim.github.io/ # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 #baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -271,10 +271,10 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _portfolio
+  # _research
   - scope:
       path: ""
-      type: portfolio
+      type: research
     values:
       layout: single
       author_profile: true
