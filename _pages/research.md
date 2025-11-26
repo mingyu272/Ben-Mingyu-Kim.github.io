@@ -16,7 +16,7 @@ The work spans three core areas that integrate robotics, sensing, and applied st
 
 ## 1. Multi-Robot Coordination & Real-Time Decision-Making
 
-<img src="{{ site.baseurl }}/images/research_multirobot.png" width="100%" style="border-radius:8px; margin-top:10px; margin-bottom:15px;"/>
+<img src="{{ site.baseurl }}/images/research_multirobot.png" width="60%" style="border-radius:8px; margin-top:10px; margin-bottom:15px;"/>
 
 I design algorithms that enable heterogeneous teams of robots—drones, surface vessels, underwater vehicles, and fixed sensors—to collaborate efficiently in dynamic, data-limited settings.  
 This work includes:
@@ -32,7 +32,7 @@ These methods support large-area ocean monitoring, maritime surveillance, and ra
 
 ## 2. Probabilistic Modeling for Sensing & Outlier Detection
 
-<img src="{{ site.baseurl }}/images/research_probabilistic.png" width="100%" style="border-radius:8px; margin-top:10px; margin-bottom:15px;"/>
+<img src="{{ site.baseurl }}/images/research_probabilistic.png" width="60%" style="border-radius:8px; margin-top:10px; margin-bottom:15px;"/>
 
 I develop stochastic modeling frameworks to characterize uncertain target arrivals and environmental processes using **Poisson processes** and **log-Gaussian Cox processes (LGCP)**.  
 These models enable autonomous systems to:
@@ -48,7 +48,7 @@ Examples include identifying abnormal vessel traffic, unusual marine animal move
 
 ## 3. Optimal Sensor Networks & Adaptive Placement
 
-<img src="{{ site.baseurl }}/images/research_sensorplacement.png" width="100%" style="border-radius:8px; margin-top:10px; margin-bottom:15px;"/>
+<img src="{{ site.baseurl }}/images/research_sensorplacement.png" width="60%" style="border-radius:8px; margin-top:10px; margin-bottom:15px;"/>
 
 I design optimization methods for deploying fixed and mobile sensor networks that maximize detection performance in uncertain environments.  
 My work incorporates:
