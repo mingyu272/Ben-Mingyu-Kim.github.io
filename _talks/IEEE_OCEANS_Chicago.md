@@ -34,8 +34,7 @@ I presented my paper *“Outlier Detection of Poisson-Distributed Targets Using 
 This work presents a framework for identifying and detecting **spatial commission outliers** in maritime environments using seabed acoustic sensor networks and **log-Gaussian Cox process (LGCP)** models.  
 The target arrival process is modeled as a mixture of normal and outlier processes, and a **second-order approximation** of the outlier-arrival probability is derived to incorporate both the mean and variance of the normal intensity function. This yields more accurate classification of atypical events compared to mean-only methods.
 
-To enhance detection capability, we integrate a **real-time, near-optimal sensor placement algorithm** that adjusts sensor locations as the estimated outlier intensity evolves. Using real ship traffic data near Norfolk, Virginia, the proposed framework demonstrates improved classification performance and higher detection rates for outlier targets in simulation.  
-:contentReference[oaicite:2]{index=2}
+To enhance detection capability, we integrate a **real-time, near-optimal sensor placement algorithm** that adjusts sensor locations as the estimated outlier intensity evolves. Using real ship traffic data near Norfolk, Virginia, the proposed framework demonstrates improved classification performance and higher detection rates for outlier targets in simulation.
 
 ---
 
