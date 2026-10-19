@@ -8,16 +8,10 @@ intro: Platforms, sensing resources, and experimental capabilities for autonomou
 {% for facility in site.data.facilities %}
 <article class="armor-facility" id="{{ facility.title | slugify }}">
   <h2>{{ facility.title }}</h2><p>{{ facility.description }}</p>
-  {% if facility.video_embed %}
-  <figure class="armor-video armor-drive-video">
-    <iframe class="armor-drive-frame" src="{{ facility.video_embed | escape }}" title="{{ facility.video_title | escape }}" width="640" height="360" loading="lazy" allow="fullscreen; encrypted-media" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
-    <figcaption><strong>{{ facility.video_title }}</strong><br>{{ facility.video_caption }}<br><a class="armor-text-link" href="{{ facility.video_link | escape }}" target="_blank" rel="noopener noreferrer">Open video in Google Drive →</a></figcaption>
-  </figure>
-  <details class="armor-facility-photos"><summary>Platform photos and local video</summary>
-  {% endif %}
+  {% if facility.video %}{% include armor-video.html src=facility.video poster=facility.video_poster title=facility.video_title caption=facility.video_caption %}{% endif %}
+  {% if facility.field_photo %}<details class="armor-facility-photos"><summary>Platform and field-testing photos</summary>{% endif %}
   {% if facility.photo %}<img class="armor-facility-photo" src="{{ facility.photo | relative_url }}" alt="{{ facility.alt | escape }}" loading="lazy">{% else %}<div class="armor-photo-placeholder"><span aria-hidden="true">＋</span><p>{{ facility.title }}<small>Facility photo to be added</small></p></div>{% endif %}
   {% if facility.field_photo %}<figure class="armor-facility-field"><img src="{{ facility.field_photo | relative_url }}" alt="{{ facility.field_alt | escape }}" loading="lazy"><figcaption>{{ facility.field_caption }}</figcaption></figure>{% endif %}
-  {% if facility.video %}{% include armor-video.html src=facility.video poster=facility.video_poster title=facility.video_title caption=facility.video_caption %}{% endif %}
-  {% if facility.video_embed %}</details>{% endif %}
+  {% if facility.field_photo %}</details>{% endif %}
 </article>{% endfor %}
 </div></div>

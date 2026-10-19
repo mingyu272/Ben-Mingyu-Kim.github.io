@@ -3,5 +3,5 @@
     <source src="{{ include.src | relative_url }}" type="video/mp4">
     Your browser does not support embedded video. <a href="{{ include.src | relative_url }}">Download {{ include.title }}</a>.
   </video>
-  <figcaption><strong>{{ include.title }}</strong>{% if include.caption %}<br>{{ include.caption }}{% endif %}</figcaption>
+  <figcaption><strong>{{ include.title }}</strong>{% if include.caption %}<br>{{ include.caption }}{% endif %}<br><a class="armor-text-link" href="{{ include.src | relative_url }}">Open or download video →</a></figcaption>
 </figure>

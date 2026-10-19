@@ -158,6 +158,5 @@ body.armor-legacy { padding-top:0; }
 
 .armor-field-feature .armor-video { margin-top:0!important; }
 
-.armor-drive-frame { display:block; width:100%; height:auto; aspect-ratio:16 / 9; border:0; background:#07273c; }
 .armor-facility-photos { margin-top:25px; }
 .armor-facility-photos summary { cursor:pointer; font-size:14px; font-weight:600; margin-bottom:20px; }
