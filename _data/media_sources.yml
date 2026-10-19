@@ -48,3 +48,8 @@
   date_from_filename: 2026-06
   conversion: H.264 / AAC, yuv420p, HDR-to-SDR BT.709 tone mapping, MP4 faststart; orientation preserved; maximum
     dimension 1280 px.
+- original_filename: Unmanned Boat Field Testing.mov
+  published_video: /videos/facilities/unmanned-boat-field-testing.mp4
+  date_from_filename: null
+  conversion: H.264 / AAC, yuv420p, HDR-to-SDR BT.709 tone mapping, MP4 faststart; portrait orientation preserved;
+    maximum dimension 1280 px.

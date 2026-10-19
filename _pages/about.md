@@ -33,7 +33,8 @@ home: true
 </div></section>
 <section class="armor-band"><div class="armor-container armor-section armor-field-feature">
   <div><p class="armor-eyebrow">FROM THE LAB TO THE FIELD</p><h2>Preparing autonomy<br>for real environments.</h2><p>Unmanned-boat field testing connects robotic platforms with the practical demands of outdoor sensing and operations.</p><a class="armor-text-link" href="{{ '/facilities/' | relative_url }}#autonomous-surface-vehicles-unmanned-boats">Explore our platforms →</a></div>
-  <figure><img src="{{ '/images/facilities/unmanned-boat-field-testing.jpg' | relative_url }}" alt="A researcher preparing an unmanned boat and supporting equipment outdoors." loading="lazy" width="1600" height="1200"><figcaption>Preparing the unmanned boat for field testing.</figcaption></figure>
+  {% assign field_testing = site.data.facilities | first %}
+  {% include armor-video.html src=field_testing.video poster=field_testing.video_poster title=field_testing.video_title caption=field_testing.video_caption %}
 </div></section>
 <section class="armor-section armor-container armor-director-summary">
   <div class="armor-logo-panel"><img src="{{ '/images/armor-logo3.png' | relative_url }}" alt="ARMOR Lab at Georgia Southern University" loading="lazy" width="1024" height="1024"></div>
