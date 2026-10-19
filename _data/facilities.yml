@@ -1,22 +1,31 @@
-# Set photo to a site-relative image path and add alt text when photos are available.
-# These categories describe research needs, not a verified equipment inventory.
-- title: Autonomous Surface Vehicles
-  description: Surface-robot platforms for adaptive sampling, collaborative sensing, and autonomous maritime operations.
-  photo:
-  alt:
-- title: Unmanned Aerial Systems
-  description: Aerial platforms for multi-robot coordination, environmental observation, and infrastructure sensing.
-  photo:
-  alt:
+# Categories remain in display order. Add verified inventory details as available.
+- title: Autonomous Surface Vehicles / Unmanned Boats
+  description: Surface-robot platforms for adaptive sampling, collaborative sensing, and autonomous maritime
+    operations.
+  photo: null
+  alt: null
+- title: UAVs / Drones
+  description: Aerial platforms for multi-robot coordination, environmental observation, and infrastructure
+    sensing.
+  photo: null
+  alt: null
+- title: Ground Robots
+  description: Ground-robot development and hands-on integration of robotic components for autonomous
+    systems research.
+  photo: /images/news/2026-05-ground-robot-development.jpg
+  alt: ARMOR Lab members assembling ground-robot components at a workbench.
 - title: Environmental & Maritime Sensors
-  description: Sensing resources for water-quality monitoring, environmental data acquisition, and maritime awareness.
-  photo:
-  alt:
+  description: Sensing resources for water-quality monitoring, environmental data acquisition, and maritime
+    awareness.
+  photo: null
+  alt: null
 - title: Computing
-  description: Computing resources for probabilistic modeling, optimization, simulation, and robotics software development.
-  photo:
-  alt:
+  description: Computing resources for probabilistic modeling, optimization, simulation, and robotics
+    software development.
+  photo: null
+  alt: null
 - title: Experimental Capabilities
-  description: Research workflows spanning simulation, sensor integration, coordinated autonomy, and field-oriented evaluation.
-  photo:
-  alt:
+  description: Research workflows spanning simulation, sensor integration, coordinated autonomy, and field-oriented
+    evaluation.
+  photo: null
+  alt: null

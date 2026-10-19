@@ -35,4 +35,9 @@ home: true
   <div class="armor-logo-panel"><img src="{{ '/images/armor-logo3.png' | relative_url }}" alt="ARMOR Lab at Georgia Southern University" loading="lazy" width="1024" height="1024"></div>
   <div><p class="armor-eyebrow">PEOPLE BEHIND THE RESEARCH</p><h2>A shared ambition<br>for autonomous systems.</h2><p>ARMOR Lab brings together research in multi-robot systems, autonomous sensing, stochastic modeling, optimization, and control.</p><p>Directed by <strong>Mingyu (Ben) Kim, Ph.D.</strong><br>Assistant Professor, Georgia Southern University</p><a class="armor-text-link" href="{{ '/people/' | relative_url }}">Meet the lab →</a></div>
 </section>
+<section class="armor-container armor-section armor-news-section">
+  <div class="armor-section-heading"><div><p class="armor-eyebrow">FROM THE LAB</p><h2>News &amp; milestones.</h2></div><a class="armor-text-link" href="{{ '/news/' | relative_url }}">All news →</a></div>
+  {% assign recent_news = site.data.news | sort: 'date' | reverse %}
+  <div class="armor-project-grid">{% for item in recent_news limit:3 %}{% include armor-news-card.html item=item %}{% endfor %}</div>
+</section>
 <section class="armor-container armor-recruit"><div><p class="armor-eyebrow">BUILD WHAT COMES NEXT</p><h2>Curious about autonomous systems?</h2><p>Explore research opportunities for Ph.D., master’s, and undergraduate students.</p></div><a class="armor-button" href="{{ '/join-us/' | relative_url }}">Join ARMOR Lab →</a></section>

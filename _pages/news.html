@@ -1,0 +1,10 @@
+---
+layout: armor
+title: News
+permalink: /news/
+intro: Research, events, and milestones from ARMOR Lab.
+---
+<div class="armor-container armor-page-content">
+  {% assign news_items = site.data.news | sort: 'date' | reverse %}
+  <div class="armor-news-list">{% for item in news_items %}{% include armor-news-card.html item=item %}{% endfor %}</div>
+</div>

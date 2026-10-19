@@ -1,0 +1,6 @@
+<article class="armor-news-card" id="{{ include.item.id }}">
+  {% if include.item.image %}<figure><img src="{{ include.item.image | relative_url }}" alt="{{ include.item.alt | escape }}" loading="lazy"{% if include.item.width %} width="{{ include.item.width }}" height="{{ include.item.height }}"{% endif %}>{% if include.item.caption %}<figcaption>{{ include.item.caption }}</figcaption>{% endif %}</figure>{% endif %}
+  <time class="armor-eyebrow" datetime="{{ include.item.date }}">{{ include.item.date_label }}</time>
+  <h3>{{ include.item.title }}</h3>
+  <p>{{ include.item.summary }}</p>
+</article>
