@@ -155,3 +155,5 @@ body.armor-legacy { padding-top:0; }
 .armor-news-gallery summary { cursor:pointer; font-size:13px; font-weight:600; }
 .armor-news-gallery figure { margin-top:20px; }
 @media(max-width:600px) { .armor-field-feature { grid-template-columns:1fr; gap:25px; } }
+
+.armor-field-feature .armor-video { margin-top:0!important; }
