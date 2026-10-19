@@ -31,6 +31,10 @@ home: true
   <div class="armor-section-heading"><div><p class="armor-eyebrow">RESEARCH IN PRACTICE</p><h2>Autonomy with a purpose.</h2></div><a class="armor-text-link" href="{{ '/projects/' | relative_url }}">View all projects →</a></div>
   <div class="armor-project-grid">{% for project in site.data.projects limit:3 %}<article class="armor-project"><p class="armor-eyebrow">{{ project.thrust }}</p><h3><a href="{{ '/projects/' | relative_url }}#{{ project.title | slugify }}">{{ project.title }}</a></h3><p>{{ project.description }}</p></article>{% endfor %}</div>
 </div></section>
+<section class="armor-band"><div class="armor-container armor-section armor-field-feature">
+  <div><p class="armor-eyebrow">FROM THE LAB TO THE FIELD</p><h2>Preparing autonomy<br>for real environments.</h2><p>Unmanned-boat field testing connects robotic platforms with the practical demands of outdoor sensing and operations.</p><a class="armor-text-link" href="{{ '/facilities/' | relative_url }}#autonomous-surface-vehicles-unmanned-boats">Explore our platforms →</a></div>
+  <figure><img src="{{ '/images/facilities/unmanned-boat-field-testing.jpg' | relative_url }}" alt="A researcher preparing an unmanned boat and supporting equipment outdoors." loading="lazy" width="1600" height="1200"><figcaption>Preparing the unmanned boat for field testing.</figcaption></figure>
+</div></section>
 <section class="armor-section armor-container armor-director-summary">
   <div class="armor-logo-panel"><img src="{{ '/images/armor-logo3.png' | relative_url }}" alt="ARMOR Lab at Georgia Southern University" loading="lazy" width="1024" height="1024"></div>
   <div><p class="armor-eyebrow">PEOPLE BEHIND THE RESEARCH</p><h2>A shared ambition<br>for autonomous systems.</h2><p>ARMOR Lab brings together research in multi-robot systems, autonomous sensing, stochastic modeling, optimization, and control.</p><p>Directed by <strong>Mingyu (Ben) Kim, Ph.D.</strong><br>Assistant Professor, Georgia Southern University</p><a class="armor-text-link" href="{{ '/people/' | relative_url }}">Meet the lab →</a></div>
@@ -38,6 +42,6 @@ home: true
 <section class="armor-container armor-section armor-news-section">
   <div class="armor-section-heading"><div><p class="armor-eyebrow">FROM THE LAB</p><h2>News &amp; milestones.</h2></div><a class="armor-text-link" href="{{ '/news/' | relative_url }}">All news →</a></div>
   {% assign recent_news = site.data.news | sort: 'date' | reverse %}
-  <div class="armor-project-grid">{% for item in recent_news limit:3 %}{% include armor-news-card.html item=item %}{% endfor %}</div>
+  <div class="armor-project-grid">{% for item in recent_news limit:3 %}{% include armor-news-card.html item=item compact=true %}{% endfor %}</div>
 </section>
 <section class="armor-container armor-recruit"><div><p class="armor-eyebrow">BUILD WHAT COMES NEXT</p><h2>Curious about autonomous systems?</h2><p>Explore research opportunities for Ph.D., master’s, and undergraduate students.</p></div><a class="armor-button" href="{{ '/join-us/' | relative_url }}">Join ARMOR Lab →</a></section>

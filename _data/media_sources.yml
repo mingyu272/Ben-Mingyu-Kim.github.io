@@ -1,4 +1,4 @@
-# Filename provenance for uploaded event images; not rendered as site content.
+# Provenance for uploaded images and videos. Null means no date in the source filename.
 - original_filename: Building ground robots May 2026.jpeg
   published_image: /images/news/2026-05-ground-robot-development.jpg
   date_from_filename: 2026-05
@@ -17,3 +17,34 @@
 - original_filename: Finished PhD defense at Virginia Tech (CMARS lab) May 2025.png
   published_image: /images/news/2025-05-virginia-tech-phd-defense.jpg
   date_from_filename: 2025-05
+- original_filename: Drone Training June 2026.jpeg
+  published_image: /images/news/2026-06-drone-training.jpg
+  date_from_filename: 2026-06
+- original_filename: Visit to Gulf Stream May 2026.jpeg
+  published_image: /images/news/2026-05-gulfstream-visit.jpg
+  date_from_filename: 2026-05
+- original_filename: Visit to Gulf Stream s May 2026.jpeg
+  published_image: /images/news/2026-05-gulfstream-aircraft-visit.jpg
+  date_from_filename: 2026-05
+- original_filename: American Control Conference (ACC) May 2026.jpeg
+  published_image: /images/news/2026-05-american-control-conference.jpg
+  date_from_filename: 2026-05
+- original_filename: ACC presented.jpeg
+  published_image: /images/news/acc-research-presentation.jpg
+  date_from_filename: null
+  date_context: Additional ACC presentation photo supplied with American Control Conference (ACC) May 2026.jpeg;
+    original filename has no date.
+- original_filename: GDOT Expo poster Sep 2026.jpeg
+  published_image: /images/news/2026-09-gdot-expo-poster.jpg
+  date_from_filename: 2026-09
+- original_filename: Unmanned Boat.jpeg
+  published_image: /images/facilities/unmanned-surface-vehicle.jpg
+  date_from_filename: null
+- original_filename: Unmanned Boat Field Testing.jpeg
+  published_image: /images/facilities/unmanned-boat-field-testing.jpg
+  date_from_filename: null
+- original_filename: Drone Training Video June 2026.mov
+  published_video: /videos/facilities/2026-06-drone-training.mp4
+  date_from_filename: 2026-06
+  conversion: H.264 / AAC, yuv420p, HDR-to-SDR BT.709 tone mapping, MP4 faststart; orientation preserved; maximum
+    dimension 1280 px.

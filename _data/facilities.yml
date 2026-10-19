@@ -1,14 +1,22 @@
-# Categories remain in display order. Add verified inventory details as available.
+# Facility display order: boats, UAVs, ground robots, other sensing/computing resources.
 - title: Autonomous Surface Vehicles / Unmanned Boats
   description: Surface-robot platforms for adaptive sampling, collaborative sensing, and autonomous maritime
     operations.
-  photo: null
-  alt: null
+  photo: /images/facilities/unmanned-surface-vehicle.jpg
+  alt: Yellow twin-hull unmanned surface vehicle beside a laptop showing the robotics workspace.
+  field_photo: /images/facilities/unmanned-boat-field-testing.jpg
+  field_alt: A researcher preparing a yellow unmanned boat and supporting equipment beside a vehicle outdoors.
+  field_caption: Preparing the unmanned boat and supporting equipment for field testing.
 - title: UAVs / Drones
   description: Aerial platforms for multi-robot coordination, environmental observation, and infrastructure
     sensing.
-  photo: null
-  alt: null
+  photo: /images/news/2026-06-drone-training.jpg
+  alt: Drone flight controller and training equipment arranged in a protective case outdoors.
+  video: /videos/facilities/2026-06-drone-training.mp4
+  video_poster: /images/facilities/2026-06-drone-training-poster.jpg
+  video_title: Drone training — June 2026
+  video_caption: A short drone-training clip from June 2026. Use the player controls to play or pause
+    the video.
 - title: Ground Robots
   description: Ground-robot development and hands-on integration of robotic components for autonomous
     systems research.

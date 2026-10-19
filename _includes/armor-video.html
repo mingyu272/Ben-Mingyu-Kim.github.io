@@ -1,0 +1,7 @@
+<figure class="armor-video">
+  <video controls playsinline preload="none"{% if include.poster %} poster="{{ include.poster | relative_url }}"{% endif %} aria-label="{{ include.title | escape }}">
+    <source src="{{ include.src | relative_url }}" type="video/mp4">
+    Your browser does not support embedded video. <a href="{{ include.src | relative_url }}">Download {{ include.title }}</a>.
+  </video>
+  <figcaption><strong>{{ include.title }}</strong>{% if include.caption %}<br>{{ include.caption }}{% endif %}</figcaption>
+</figure>
