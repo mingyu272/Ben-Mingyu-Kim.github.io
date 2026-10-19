@@ -36,3 +36,9 @@ Edit `_data/news.yml`. The News page sorts entries newest first; the homepage sh
 For event photos, add a site-relative `image` path, meaningful `alt` text, and a concise `caption`. Keep original aspect ratios. Archive-provided descriptions are reference material; confirm they support the caption before publishing.
 
 Uploaded event photos are stored in `images/news/` with month-prefixed descriptive names. `_data/media_sources.yml` records their original filenames and source date precision. Published copies are EXIF-oriented, resized to fit within 1600 × 1600 pixels, and encoded as optimized JPEGs without embedded location metadata; original uploads remain outside the checkout. No photo is cropped. The homepage displays at most three news items with bounded image height. Facility photographs retain their full aspect ratio.
+
+## Video and field media
+
+`_includes/armor-video.html` renders responsive MP4 video with native controls, `playsinline`, `preload="none"`, a poster, an accessible label, and a download fallback. It never autoplays. Facility video paths and captions are configured in `_data/facilities.yml`. The June 2026 drone-training MOV was converted to H.264/AAC with HDR-to-SDR BT.709 tone mapping and `faststart`; its portrait orientation is preserved.
+
+The homepage currently features the supplied **unmanned-boat field-testing photograph**. Neither `b.zip` nor `c.zip` contained an unmanned-boat video. Replace the photograph with the boat video once supplied; keep the homepage to one field-testing media feature. Undated boat photos are used without dates. The undated ACC presentation photo is grouped as an additional event photo and explicitly captioned as undated. Additional event images are shown in expandable galleries on News, not on the homepage.
