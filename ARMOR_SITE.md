@@ -28,3 +28,11 @@ export BUNDLE_USER_HOME=/workspace/.cloud-tools/bundle-home
 ```
 
 The development server serves the site under the configured `/Ben-Mingyu-Kim.github.io/` base path. Restart it after changing `_config.yml`. Check the seven lab pages at desktop and mobile widths, follow navigation and research anchors, and confirm images load. Generated output and local previews are ignored; never edit `_site/` as source.
+
+## News and event photos
+
+Edit `_data/news.yml`. The News page sorts entries newest first; the homepage shows at most three. Use the filename's date precision: `YYYY-MM-DD` when a day is known, or `YYYY-MM` for a month-only date, and set the corresponding `date_label`. Never infer an event date from a file modification timestamp. Items sharing a month without known days have no asserted day-level chronology.
+
+For event photos, add a site-relative `image` path, meaningful `alt` text, and a concise `caption`. Keep original aspect ratios. Archive-provided descriptions are reference material; confirm they support the caption before publishing.
+
+Uploaded event photos are stored in `images/news/` with month-prefixed descriptive names. `_data/media_sources.yml` records their original filenames and source date precision. Published copies are EXIF-oriented, resized to fit within 1600 × 1600 pixels, and encoded as optimized JPEGs without embedded location metadata; original uploads remain outside the checkout. No photo is cropped. The homepage displays at most three news items with bounded image height. Facility photographs retain their full aspect ratio.
