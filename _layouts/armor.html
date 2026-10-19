@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% include seo.html %}
+  <link rel="icon" href="{{ '/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ '/assets/css/armor.css' | relative_url }}">
+</head>
+<body class="armor-site">
+  <a class="armor-skip" href="#main-content">Skip to content</a>
+  {% include masthead.html %}
+  <main id="main-content">
+    {% unless page.home %}
+    <header class="armor-page-heading armor-container">
+      <p class="armor-eyebrow">ARMOR LAB / {{ page.eyebrow | default: page.title }}</p>
+      <h1>{{ page.title }}</h1>
+      {% if page.intro %}<p class="armor-lead">{{ page.intro }}</p>{% endif %}
+    </header>
+    {% endunless %}
+    {{ content }}
+  </main>
+  <footer class="armor-footer">
+    <div class="armor-container armor-footer-grid">
+      <div><a class="armor-footer-brand" href="{{ '/' | relative_url }}">ARMOR LAB<span>Georgia Southern University</span></a><p>Autonomous Robotics &amp; Multi-Agent<br>Operations Research Lab</p></div>
+      <div><p class="armor-eyebrow">CONNECT</p><a href="mailto:mkim@georgiasouthern.edu">mkim@georgiasouthern.edu</a><p>Department of Electrical and<br>Computer Engineering</p></div>
+      <div><p class="armor-eyebrow">EXPLORE</p><a href="{{ '/research/' | relative_url }}">Our research</a><a href="{{ site.author.googlescholar | escape }}">Publications →</a><a href="{{ '/join-us/' | relative_url }}">Join the lab</a></div>
+    </div>
+    <div class="armor-container armor-footer-bottom">© {{ 'now' | date: '%Y' }} ARMOR Lab · Georgia Southern University</div>
+  </footer>
+</body>
+</html>

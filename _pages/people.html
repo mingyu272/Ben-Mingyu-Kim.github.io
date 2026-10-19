@@ -1,0 +1,12 @@
+---
+layout: armor
+title: People
+permalink: /people/
+intro: The people building intelligence for autonomous systems.
+---
+<div class="armor-container armor-page-content">
+{% assign director = site.data.people.director %}
+<section class="armor-director"><img src="{{ director.photo | relative_url }}" alt="Mingyu (Ben) Kim, ARMOR Lab director" width="360" height="360"><div><p class="armor-eyebrow">LAB DIRECTOR</p><h2>{{ director.name }}</h2><p>{{ director.role }}<br>{{ director.department }}<br>{{ director.institution }}</p><h3>Research</h3><p>{{ director.research }}</p><div class="armor-actions"><a class="armor-text-link" href="mailto:mkim@georgiasouthern.edu">Email →</a><a class="armor-text-link" href="{{ site.author.googlescholar | escape }}">Google Scholar →</a><a class="armor-text-link" href="{{ '/files/CV.pdf' | relative_url }}">CV →</a></div></div></section>
+{% for group in site.data.people.groups %}<section class="armor-people-group"><h2>{{ group.title }}</h2>{% if group.members.size > 0 %}<div class="armor-project-grid">{% for member in group.members %}<article class="armor-project"><h3>{% if member.url %}<a href="{{ member.url | escape }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</h3><p>{{ member.role }}</p></article>{% endfor %}</div>{% else %}<p class="armor-placeholder-text">{{ group.placeholder }}</p>{% endif %}</section>{% endfor %}
+<div class="armor-callout"><h2>Bring your curiosity.</h2><p>Interested in robotics, sensing, and decision-making under uncertainty?</p><a class="armor-text-link" href="{{ '/join-us/' | relative_url }}">Explore opportunities →</a></div>
+</div>

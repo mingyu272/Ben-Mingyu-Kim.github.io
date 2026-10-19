@@ -1,36 +1,18 @@
-# The following is the order of the links in the header of the website.
-#
-# Changing the order here will adjust the order and you can also add additional
-# links. Removing a link prevents it from showing in the header, but does not
-# prevent it from being included in the site.
-#
-# NOTE that only one of the CV options should be selected, the first is for the
-#      Markdown formatted page while the second is generated using JSON.
-
+# Main navigation. Legacy pages remain available at their existing URLs.
 main:
-  - title: "PI"
-    url: /files/CV.pdf
-    
-  - title: "Research"
+  - title: Home
+    url: /
+  - title: Research
     url: /research/
-
-  - title: "Publications"
+  - title: People
+    url: /people/
+  - title: Projects
+    url: /projects/
+  - title: Publications
     url: https://scholar.google.com/citations?user=4v3qNoMAAAAJ&hl=en
-
-  - title: "Talks"
-    url: /talks/    
-
-  - title: "Teaching"
-    url: /teaching/    
-    
-
-        
-  #- title: "Blog Posts"
-  # url: /year-archive/
-    
-
-  # - title: "CV"
-  #   url: /cv-json/
-    
-  # - title: "Guide"
-  #  url: /markdown/
+  - title: Facilities
+    url: /facilities/
+  - title: Join Us
+    url: /join-us/
+  - title: Contact
+    url: /contact/

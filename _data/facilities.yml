@@ -1,0 +1,22 @@
+# Set photo to a site-relative image path and add alt text when photos are available.
+# These categories describe research needs, not a verified equipment inventory.
+- title: Autonomous Surface Vehicles
+  description: Surface-robot platforms for adaptive sampling, collaborative sensing, and autonomous maritime operations.
+  photo:
+  alt:
+- title: Unmanned Aerial Systems
+  description: Aerial platforms for multi-robot coordination, environmental observation, and infrastructure sensing.
+  photo:
+  alt:
+- title: Environmental & Maritime Sensors
+  description: Sensing resources for water-quality monitoring, environmental data acquisition, and maritime awareness.
+  photo:
+  alt:
+- title: Computing
+  description: Computing resources for probabilistic modeling, optimization, simulation, and robotics software development.
+  photo:
+  alt:
+- title: Experimental Capabilities
+  description: Research workflows spanning simulation, sensor integration, coordinated autonomy, and field-oriented evaluation.
+  photo:
+  alt:

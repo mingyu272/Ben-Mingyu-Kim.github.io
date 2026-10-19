@@ -1,0 +1,19 @@
+# Add people to each members list using name, role, and optional url fields.
+# Example: members: [{name: Full Name, role: Graduate Researcher, url: https://example.com}]
+director:
+  name: Mingyu (Ben) Kim, Ph.D.
+  role: Assistant Professor
+  department: Electrical & Computer Engineering
+  institution: Georgia Southern University
+  photo: /images/circle_pic2.png
+  research: Multi-robot systems, autonomous sensing, stochastic modeling, optimization, and control.
+groups:
+  - title: Graduate Researchers
+    placeholder: Graduate researcher profiles will be added here.
+    members: []
+  - title: Undergraduate Researchers
+    placeholder: Undergraduate researcher profiles will be added here.
+    members: []
+  - title: Alumni
+    placeholder: Alumni profiles and destinations will be added here.
+    members: []

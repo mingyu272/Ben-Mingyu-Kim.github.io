@@ -1,0 +1,16 @@
+# Research themes; add verified results, collaborators, and photos as available.
+- title: Multi-Robot Decision-Making under Limited Information
+  thrust: Multi-Robot Intelligence
+  description: Distributed planning, task allocation, and coordination for robotic teams operating with incomplete information and communication constraints.
+- title: Autonomous Water-Quality Monitoring
+  thrust: Autonomous Field Systems
+  description: Collaborative USV–UAV sensing, adaptive sampling, environmental modeling, and digital-twin integration for coastal water-quality intelligence.
+- title: UAS Infrastructure Inspection
+  thrust: Autonomous Field Systems
+  description: Aerial mission planning and sensing methods for infrastructure monitoring, situational awareness, and resilient operations.
+- title: Probabilistic Maritime Sensing
+  thrust: Uncertainty-Aware Sensing
+  description: Poisson and log-Gaussian Cox process models of uncertain target arrivals, with sensor-placement methods designed to reduce missed detections.
+- title: Real-Time Anomaly Detection
+  thrust: Uncertainty-Aware Sensing
+  description: Uncertainty-aware inference and heterogeneous data fusion for identifying atypical vessel activity and environmental events.
