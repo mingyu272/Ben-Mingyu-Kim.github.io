@@ -1,0 +1,18 @@
+- title: Multi-Robot Intelligence
+  id: multi-robot-intelligence
+  number: '01'
+  description: Distributed decision-making, coordination, task allocation, and adaptive autonomy for heterogeneous robotic teams.
+  image: research_multirobot.png
+  alt: Illustration of coordinated aerial, surface, and underwater robots and sensors
+- title: Uncertainty-Aware Sensing
+  id: uncertainty-aware-sensing
+  number: '02'
+  description: Probabilistic modeling, sensor placement, anomaly detection, Bayesian inference, and adaptive information acquisition.
+  image: research_probabilistic.png
+  alt: Illustration of probabilistic sensing and anomaly detection
+- title: Autonomous Field Systems
+  id: autonomous-field-systems
+  number: '03'
+  description: UAV, USV, and sensor-network systems for maritime awareness, environmental monitoring, infrastructure inspection, and resilient operations.
+  image: research_sensorplacement.png
+  alt: Illustration of an adaptive sensor network for environmental monitoring

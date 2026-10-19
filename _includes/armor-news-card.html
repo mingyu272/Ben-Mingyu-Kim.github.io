@@ -1,0 +1,11 @@
+<article class="armor-news-card" id="{{ include.item.id }}">
+  {% if include.item.image %}<figure><img src="{{ include.item.image | relative_url }}" alt="{{ include.item.alt | escape }}" loading="lazy"{% if include.item.width %} width="{{ include.item.width }}" height="{{ include.item.height }}"{% endif %}>{% if include.item.caption %}<figcaption>{{ include.item.caption }}</figcaption>{% endif %}</figure>{% endif %}
+  <time class="armor-eyebrow" datetime="{{ include.item.date }}">{{ include.item.date_label }}</time>
+  <h3>{{ include.item.title }}</h3>
+  <p>{{ include.item.summary }}</p>
+  {% unless include.compact %}{% if include.item.gallery %}
+  <details class="armor-news-gallery"><summary>More photos from this event</summary>
+    {% for photo in include.item.gallery %}<figure><img src="{{ photo.image | relative_url }}" alt="{{ photo.alt | escape }}" loading="lazy" width="{{ photo.width }}" height="{{ photo.height }}"><figcaption>{{ photo.caption }}</figcaption></figure>{% endfor %}
+  </details>
+  {% endif %}{% endunless %}
+</article>

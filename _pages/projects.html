@@ -1,0 +1,9 @@
+---
+layout: armor
+title: Projects
+permalink: /projects/
+intro: Research directions that connect foundational methods with real-world sensing and autonomy.
+---
+<div class="armor-container armor-page-content"><div class="armor-project-list">
+{% for project in site.data.projects %}<article class="armor-project-detail" id="{{ project.title | slugify }}"><span class="armor-number">0{{ forloop.index }}</span><div><p class="armor-eyebrow">{{ project.thrust }}</p><h2>{{ project.title }}</h2><p>{{ project.description }}</p></div></article>{% endfor %}
+</div><div class="armor-callout"><h2>Interested in collaborating?</h2><p>We welcome conversations across robotics, control, environmental science, and data analytics.</p><a class="armor-text-link" href="{{ '/contact/' | relative_url }}">Contact the lab →</a></div></div>

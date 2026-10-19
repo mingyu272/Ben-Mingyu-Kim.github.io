@@ -1,114 +1,48 @@
 ---
+layout: armor
 permalink: /
-title: "Welcome to the Autonomous Robotics & Multi-agent Operations Research (ARMOR) Lab! "
-author_profile: true
+title: Home
+home: true
 ---
-
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/mingyu272/Ben-Mingyu-Kim.github.io/master/images/armor-logo3.png"
-       alt="ARMOR Lab Logo" width="500">
-</p>
-
-
-
-
-## Research Visions
-
-I am Mingyu (Ben) Kim, an Assistant Professor in the Department of Electrical and Computer Engineering at Georgia Southern University.  
-
-My research focuses on **multi-robot systems**, **sensor networks**, **probabilistic modeling**, and **real-time optimization under uncertainty**. I develop algorithms that enable autonomous systems to sense, learn, and make decisions efficiently in dynamic and uncertain environments.
-
-My work spans applications in:
-- Autonomous drones and surface vessels  
-- Maritime domain awareness and naval sensing  
-- Environmental monitoring & water-quality intelligence  
-- Disaster response and infrastructure resilience  
-- Distributed optimization for multi-agent systems  
-
-I am always interested in collaborative research and interdisciplinary partnerships across robotics, control systems, environmental sensing, and defense applications.
-
----
-
-## Research Interests
-
-- **Multi-Robot Coordination & Control**  
-  Cooperative planning, decentralized decision-making, and real-time task allocation.
-
-- **Optimal Sensor Placement & Network Design**  
-  Algorithms for detecting uncertain targets, Poisson/LGCP modeling, and outlier detection.
-
-- **Probabilistic Modeling & State Estimation**  
-  Kalman Filtering, Bayesian inference, distributed fusion.
-
-- **Autonomous Marine & Aerial Vehicles**  
-  UAV/USV planning, environmental sensing, and autonomous surveillance missions.
-
-- **Digital Twin & Data-Driven Modeling**  
-  Integration of robotic systems with digital replicas for real-time prediction and decision-making.
-
----
-
-## Recent Projects
-
-### **Real-Time Sensor Placement for Uncertain Target Detection**
-- Developed Poisson/LGCP-based models for target arrivals in naval surveillance.
-- Designed near–real-time algorithms minimizing undetected targets.
-
-### **Distributed Optimization for Multi-Robot Systems**
-- Decentralized estimation and coordination with time-varying constraints.  
-- Applications in persistent monitoring and environmental exploration.
-
-### **USV–UAV Collaborative Sensing for Coastal Water Quality**
-- Autonomous sampling, environmental modeling, and digital-twin integration.
-
-### **Drone-Based Situational Awareness for Emergency Response**
-- Path planning, anomaly detection, and infrastructure monitoring in collaboration with state agencies.
-
-A full list of publications, talks, teaching materials, and ongoing projects can be found in the menu above.
-
----
-
-## Opportunities for Students
-
-I am **actively recruiting motivated Master’s and Ph.D. students** interested in statistics, robotics, optimization, and sensing systems.
-
-Students in my group will gain experience in:
-- ROS2, PX4, Python, MATLAB, C++  
-- UAV/USV deployment and field experiments  
-- Optimization, control theory, probability, and machine learning  
-- Writing high-impact papers and proposals  
-- Collaborations with federal and state agencies  
-
-If you are interested, please email me with:
-- Your CV  
-- Research interests  
-- Relevant coursework or projects  
-
----
-
-## Collaborations
-
-I welcome collaboration with:
-- Researchers in robotics, controls, environmental science, and data analytics  
-- Federal and state agencies  
-- Industry partners in autonomy, sensing, and environmental technologies  
-
-Feel free to reach out if you would like to discuss ideas or explore joint projects.
-
----
-
-## News
-
-- Preparing submissions for **IEEE IROS 2026** and **ACC 2026**.  
-- Launching a new multi-robot platform with drones and Blue Robotics USVs.  
-- Expanding collaborations with naval and environmental research partners.
-
----
-
-## Contact
-
-**Mingyu (Ben) Kim**  
-Assistant Professor, Electrical & Computer Engineering  
-Georgia Southern University  
-Email: mkim@georgiasouthern.edu  
+<section class="armor-hero">
+  <div class="armor-container armor-hero-grid">
+    <div class="armor-hero-copy">
+      <p class="armor-eyebrow"><span class="armor-rule"></span> AUTONOMY. INTELLIGENCE. IMPACT.</p>
+      <h1>Robotic systems that<br>sense, learn, <em>coordinate,</em><br>and make decisions<br>under uncertainty.</h1>
+      <p class="armor-hero-name">Autonomous Robotics &amp; Multi-Agent Operations Research (ARMOR) Lab</p>
+      <p class="armor-hero-institution">Georgia Southern University<br>Department of Electrical and Computer Engineering</p>
+      <div class="armor-actions"><a class="armor-button" href="{{ '/research/' | relative_url }}">Explore our research <span aria-hidden="true">→</span></a><a class="armor-text-link" href="{{ '/join-us/' | relative_url }}">Join the lab <span aria-hidden="true">→</span></a></div>
+    </div>
+    <figure class="armor-hero-visual">
+      <div class="armor-visual-label"><span>CONNECTED AUTONOMY</span><span>FIELD ↔ INTELLIGENCE</span></div>
+      <img src="{{ '/images/research_multirobot.png' | relative_url }}" alt="An aerial robot, surface vessel, underwater robot, and sensors coordinating across a maritime environment" width="1024" height="1024">
+      <figcaption><span class="armor-status-dot"></span> Heterogeneous systems. Shared intelligence.</figcaption>
+    </figure>
+  </div>
+</section>
+<section class="armor-affiliation"><div class="armor-container"><span>GEORGIA SOUTHERN UNIVERSITY</span><span>Electrical &amp; Computer Engineering</span><span>Statesboro, Georgia</span></div></section>
+<section class="armor-section armor-container">
+  <div class="armor-section-heading"><div><p class="armor-eyebrow">OUR RESEARCH</p><h2>From individual robots<br>to collective intelligence.</h2></div><p>We connect robotics, sensing, and operations research to build autonomous systems that adapt to a changing world.</p></div>
+  <div class="armor-thrust-grid">{% for thrust in site.data.research %}
+    <a class="armor-thrust" href="{{ '/research/' | relative_url }}#{{ thrust.id }}"><span class="armor-number">{{ thrust.number }} / RESEARCH THRUST</span><h3>{{ thrust.title }}</h3><p>{{ thrust.description }}</p><span class="armor-card-link">Explore this thrust <span aria-hidden="true">→</span></span></a>
+  {% endfor %}</div>
+</section>
+<section class="armor-band"><div class="armor-container armor-section">
+  <div class="armor-section-heading"><div><p class="armor-eyebrow">RESEARCH IN PRACTICE</p><h2>Autonomy with a purpose.</h2></div><a class="armor-text-link" href="{{ '/projects/' | relative_url }}">View all projects →</a></div>
+  <div class="armor-project-grid">{% for project in site.data.projects limit:3 %}<article class="armor-project"><p class="armor-eyebrow">{{ project.thrust }}</p><h3><a href="{{ '/projects/' | relative_url }}#{{ project.title | slugify }}">{{ project.title }}</a></h3><p>{{ project.description }}</p></article>{% endfor %}</div>
+</div></section>
+<section class="armor-band"><div class="armor-container armor-section armor-field-feature">
+  <div><p class="armor-eyebrow">FROM THE LAB TO THE FIELD</p><h2>Preparing autonomy<br>for real environments.</h2><p>Unmanned-boat field testing connects robotic platforms with the practical demands of outdoor sensing and operations.</p><a class="armor-text-link" href="{{ '/facilities/' | relative_url }}#autonomous-surface-vehicles-unmanned-boats">Explore our platforms →</a></div>
+  {% assign field_testing = site.data.facilities | first %}
+  {% include armor-video.html src=field_testing.video poster=field_testing.video_poster title=field_testing.video_title caption=field_testing.video_caption %}
+</div></section>
+<section class="armor-section armor-container armor-director-summary">
+  <div class="armor-logo-panel"><img src="{{ '/images/armor-logo3.png' | relative_url }}" alt="ARMOR Lab at Georgia Southern University" loading="lazy" width="1024" height="1024"></div>
+  <div><p class="armor-eyebrow">PEOPLE BEHIND THE RESEARCH</p><h2>A shared ambition<br>for autonomous systems.</h2><p>ARMOR Lab brings together research in multi-robot systems, autonomous sensing, stochastic modeling, optimization, and control.</p><p>Directed by <strong>Mingyu (Ben) Kim, Ph.D.</strong><br>Assistant Professor, Georgia Southern University</p><a class="armor-text-link" href="{{ '/people/' | relative_url }}">Meet the lab →</a></div>
+</section>
+<section class="armor-container armor-section armor-news-section">
+  <div class="armor-section-heading"><div><p class="armor-eyebrow">FROM THE LAB</p><h2>News &amp; milestones.</h2></div><a class="armor-text-link" href="{{ '/news/' | relative_url }}">All news →</a></div>
+  {% assign recent_news = site.data.news | sort: 'date' | reverse %}
+  <div class="armor-project-grid">{% for item in recent_news limit:3 %}{% include armor-news-card.html item=item compact=true %}{% endfor %}</div>
+</section>
+<section class="armor-container armor-recruit"><div><p class="armor-eyebrow">BUILD WHAT COMES NEXT</p><h2>Curious about autonomous systems?</h2><p>Explore research opportunities for Ph.D., master’s, and undergraduate students.</p></div><a class="armor-button" href="{{ '/join-us/' | relative_url }}">Join ARMOR Lab →</a></section>

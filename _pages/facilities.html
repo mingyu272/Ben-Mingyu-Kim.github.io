@@ -1,0 +1,17 @@
+---
+layout: armor
+title: Facilities
+permalink: /facilities/
+intro: Platforms, sensing resources, and experimental capabilities for autonomous systems research.
+---
+<div class="armor-container armor-page-content"><p class="armor-intro-copy">This overview organizes the lab’s research infrastructure. Equipment specifications and facility photographs will be added as details are documented.</p><div class="armor-facility-grid">
+{% for facility in site.data.facilities %}
+<article class="armor-facility" id="{{ facility.title | slugify }}">
+  <h2>{{ facility.title }}</h2><p>{{ facility.description }}</p>
+  {% if facility.video %}{% include armor-video.html src=facility.video poster=facility.video_poster title=facility.video_title caption=facility.video_caption %}{% endif %}
+  {% if facility.field_photo %}<details class="armor-facility-photos"><summary>Platform and field-testing photos</summary>{% endif %}
+  {% if facility.photo %}<img class="armor-facility-photo" src="{{ facility.photo | relative_url }}" alt="{{ facility.alt | escape }}" loading="lazy">{% else %}<div class="armor-photo-placeholder"><span aria-hidden="true">＋</span><p>{{ facility.title }}<small>Facility photo to be added</small></p></div>{% endif %}
+  {% if facility.field_photo %}<figure class="armor-facility-field"><img src="{{ facility.field_photo | relative_url }}" alt="{{ facility.field_alt | escape }}" loading="lazy"><figcaption>{{ facility.field_caption }}</figcaption></figure>{% endif %}
+  {% if facility.field_photo %}</details>{% endif %}
+</article>{% endfor %}
+</div></div>
