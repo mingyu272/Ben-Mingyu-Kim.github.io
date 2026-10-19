@@ -1,0 +1,444 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+<meta name="robots" content="noindex, nofollow">
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>            Outlier Detection of Poisson-Distributed Targets Using a Seabed Sensor Network - ARMOR Lab      Georgia Southern University      </title>
+
+
+
+<meta name="description" content="Autonomous Robotics &amp; Multi-Agent Operations Research Lab at Georgia Southern University, developing multi-robot systems, uncertainty-aware sensing, and autonomous field systems.">
+
+
+
+
+
+  <meta property="article:published_time" content="2025-09-29T00:00:00+00:00">
+
+
+
+  <link rel="canonical" href="https://raw.githack.com/mingyu272/Ben-Mingyu-Kim.github.io/armor-lab-preview/talks/2025-oceans-chi-mingyu-kim">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Ben Kim",
+      "url" : "https://raw.githack.com/mingyu272/Ben-Mingyu-Kim.github.io/armor-lab-preview",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+<!-- Open Graph protocol data (https://ogp.me/), used by social media -->
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="ARMOR Lab | Georgia Southern University"> 
+<meta property="og:title" content="Outlier Detection of Poisson-Distributed Targets Using a Seabed Sensor Network">
+
+  <meta property="og:type" content="article">
+
+
+  <meta property="og:description" name="description" content="Autonomous Robotics &amp; Multi-Agent Operations Research Lab at Georgia Southern University, developing multi-robot systems, uncertainty-aware sensing, and autonomous field systems.">
+
+
+  <meta property="og:url" content="https://raw.githack.com/mingyu272/Ben-Mingyu-Kim.github.io/armor-lab-preview/talks/2025-oceans-chi-mingyu-kim">
+
+
+
+
+
+<!-- end Open Graph protocol -->
+
+<link href="https://raw.githack.com/mingyu272/Ben-Mingyu-Kim.github.io/armor-lab-preview/feed.xml" type="application/atom+xml" rel="alternate" title="ARMOR Lab | Georgia Southern University Feed">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://raw.githack.com/mingyu272/Ben-Mingyu-Kim.github.io/armor-lab-preview/assets/css/main.css">
+
+    
+
+<!-- start custom head snippets -->
+
+<!-- Support for Academicons -->
+<link rel="stylesheet" href="https://raw.githack.com/mingyu272/Ben-Mingyu-Kim.github.io/armor-lab-preview/assets/css/academicons.css"/>
+
+<!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
+<link rel="apple-touch-icon" sizes="180x180" href="https://raw.githack.com/mingyu272/Ben-Mingyu-Kim.github.io/armor-lab-preview/images/apple-touch-icon-180x180.png"/>
+<link rel="icon" type="image/svg+xml" href="https://raw.githack.com/mingyu272/Ben-Mingyu-Kim.github.io/armor-lab-preview/images/favicon.svg"/>
+<link rel="icon" type="image/png" href="https://raw.githack.com/mingyu272/Ben-Mingyu-Kim.github.io/armor-lab-preview/images/favicon-32x32.png" sizes="32x32"/>
+<link rel="icon" type="image/png" href="https://raw.githack.com/mingyu272/Ben-Mingyu-Kim.github.io/armor-lab-preview/images/favicon-192x192.png" sizes="192x192"/>
+<link rel="manifest" href="https://raw.githack.com/mingyu272/Ben-Mingyu-Kim.github.io/armor-lab-preview/images/manifest.json"/>
+<link rel="icon" href="https://raw.githack.com/mingyu272/Ben-Mingyu-Kim.github.io/armor-lab-preview/images/favicon.ico"/>
+<meta name="theme-color" content="#ffffff"/>
+
+<!-- end custom head snippets -->
+
+<link rel="stylesheet" href="/mingyu272/Ben-Mingyu-Kim.github.io/armor-lab-preview/assets/css/armor.css">
+
+  </head>
+
+  <body class="armor-legacy">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <header class="armor-header">
+  <div class="armor-header-inner">
+    <a class="armor-brand" href="/mingyu272/Ben-Mingyu-Kim.github.io/armor-lab-preview/index.html" aria-label="ARMOR Lab home">ARMOR<span>LAB</span><small>GEORGIA SOUTHERN UNIVERSITY</small></a>
+    <nav class="armor-nav" aria-label="Main navigation">
+      
+      <a href="/mingyu272/Ben-Mingyu-Kim.github.io/armor-lab-preview/index.html">Home</a>
+      
+      <a href="/mingyu272/Ben-Mingyu-Kim.github.io/armor-lab-preview/research/index.html">Research</a>
+      
+      <a href="/mingyu272/Ben-Mingyu-Kim.github.io/armor-lab-preview/people/index.html">People</a>
+      
+      <a href="/mingyu272/Ben-Mingyu-Kim.github.io/armor-lab-preview/projects/index.html">Projects</a>
+      
+      <a href="https://scholar.google.com/citations?user=4v3qNoMAAAAJ&hl=en">Publications</a>
+      
+      <a href="/mingyu272/Ben-Mingyu-Kim.github.io/armor-lab-preview/facilities/index.html">Facilities</a>
+      
+      <a href="/mingyu272/Ben-Mingyu-Kim.github.io/armor-lab-preview/join-us/index.html">Join Us</a>
+      
+      <a href="/mingyu272/Ben-Mingyu-Kim.github.io/armor-lab-preview/contact/index.html">Contact</a>
+      
+    </nav>
+  </div>
+</header>
+
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="https://raw.githubusercontent.com/mingyu272/Ben-Mingyu-Kim.github.io/master/images/circle_pic2.png" alt="PI: Mingyu (Ben) Kim"  fetchpriority="high" />
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">PI: Mingyu (Ben) Kim</h3>
+    
+    <p class="author__bio">Assistant Professor at GS</p>
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      <!-- Font Awesome icons / Biographic information  -->
+      
+        <li class="author__desktop"><i class="fas fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i>Statesboro, GA, USA</li>
+      
+      
+        <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>Georgia Southern University (GS)</li>
+      
+      
+      
+        <li><a href="mailto:mkim@georgiasouthern.edu"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>Email</a></li>
+      
+
+      <!-- Font Awesome and Academicons icons / Academic websites -->
+      
+            
+      
+        <li><a href="https://scholar.google.com/citations?user=4v3qNoMAAAAJ&hl=en"><i class="ai ai-google-scholar ai-fw icon-pad-right"></i>Google Scholar</a></li>
+      
+      
+      
+      
+                              
+      
+      
+      
+
+      <!-- Font Awesome icons / Repositories and software development -->
+      
+            
+            
+      
+            
+            
+
+      <!-- Font Awesome icons / Social media -->
+              
+      
+      
+            
+      
+                  
+                  
+      
+            
+            
+      
+        <li><a href="https://www.linkedin.com/in/mingyu-kim-b56303b7/"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
+            
+      
+            
+                  
+            
+      
+            
+            
+      
+              
+      
+                      
+      
+      
+            
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Outlier Detection of Poisson-Distributed Targets Using a Seabed Sensor Network">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="September 29, 2025">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Outlier Detection of Poisson-Distributed Targets Using a Seabed Sensor Network
+</h1>
+          
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Date:</strong> <time datetime="2025-09-29T00:00:00+00:00">September 29, 2025</time></p>
+        
+        
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <h2 id="conference-information">Conference Information</h2>
+
+<p><strong>Event:</strong> IEEE OCEANS 2025 – Great Lakes<br />
+<strong>Website:</strong> https://greatlakes25.oceansconference.org/<br />
+<strong>Dates:</strong> September 29 – October 2, 2025<br />
+<strong>Location:</strong> Navy Pier, Chicago, Illinois</p>
+
+<p>I presented my paper <em>“Outlier Detection of Poisson-Distributed Targets Using a Seabed Sensor Network.”</em></p>
+
+<hr />
+
+<h2 id="paper--slides">Paper &amp; Slides</h2>
+
+<ul>
+  <li>
+    <p><strong>📄 Paper (PDF):</strong> <em>Outlier Detection of Poisson-Distributed Targets Using a Seabed Sensor Network</em><br />
+:contentReference[oaicite:0]{index=0}</p>
+  </li>
+  <li>
+    <p><strong>📊 Presentation Slides (PPTX):</strong><br />
+:contentReference[oaicite:1]{index=1}</p>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="abstract">Abstract</h2>
+
+<p>This work presents a framework for identifying and detecting <strong>spatial commission outliers</strong> in maritime environments using seabed acoustic sensor networks and <strong>log-Gaussian Cox process (LGCP)</strong> models.<br />
+The target arrival process is modeled as a mixture of normal and outlier processes, and a <strong>second-order approximation</strong> of the outlier-arrival probability is derived to incorporate both the mean and variance of the normal intensity function. This yields more accurate classification of atypical events compared to mean-only methods.</p>
+
+<p>To enhance detection capability, we integrate a <strong>real-time, near-optimal sensor placement algorithm</strong> that adjusts sensor locations as the estimated outlier intensity evolves. Using real ship traffic data near Norfolk, Virginia, the proposed framework demonstrates improved classification performance and higher detection rates for outlier targets in simulation.</p>
+
+<hr />
+
+<h2 id="context-of-the-work">Context of the Work</h2>
+
+<p>This presentation builds upon my previous research on:</p>
+
+<ul>
+  <li>Log-Gaussian Cox process modeling for uncertain target arrivals</li>
+  <li>Real-time sensor placement and void probability maximization</li>
+  <li>Approximation analysis using Jensen’s inequality</li>
+  <li>Application of INLA for Bayesian spatial modeling</li>
+</ul>
+
+<p>This conference version focuses on the <strong>outlier detection extension</strong> and the <strong>integration of closed-form approximations for real-time maritime surveillance</strong>.</p>
+
+<hr />
+
+<h2 id="citation">Citation</h2>
+
+<p><strong>M. Kim</strong>, <strong>D. J. Stilwell</strong>, and <strong>J. Jimenez</strong>,<br />
+“<em>Outlier Detection of Poisson-Distributed Targets Using a Seabed Sensor Network</em>,”<br />
+presented at <strong>IEEE OCEANS 2025</strong>, Chicago, IL.</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+      </footer>
+
+      
+
+<section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://bsky.app/intent/compose?text=https://raw.githack.com/mingyu272/Ben-Mingyu-Kim.github.io/armor-lab-preview/talks/2025-oceans-chi-mingyu-kim" class="btn btn--bluesky" title="Share on Bluesky"><i class="fab fa-bluesky" aria-hidden="true"></i><span> Bluesky</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://raw.githack.com/mingyu272/Ben-Mingyu-Kim.github.io/armor-lab-preview/talks/2025-oceans-chi-mingyu-kim" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://raw.githack.com/mingyu272/Ben-Mingyu-Kim.github.io/armor-lab-preview/talks/2025-oceans-chi-mingyu-kim" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+
+  <a href="https://www.addtoany.com/add_to/mastodon?linkurl=https%3A%2F%2Fraw.githack.com%2Fmingyu272%2FBen-Mingyu-Kim.github.io%2Farmor-lab-preview%2Ftalks%2F2025-oceans-chi-mingyu-kim" class="btn btn--mastodon" title="Share on Mastodon"><i class="fab fa-mastodon" aria-hidden="true"></i><span> Mastodon</span></a>
+
+  <a href="https://x.com/intent/post?text=https://raw.githack.com/mingyu272/Ben-Mingyu-Kim.github.io/armor-lab-preview/talks/2025-oceans-chi-mingyu-kim" class="btn btn--x" title="Share on X"><i class="fab fa-x-twitter" aria-hidden="true"></i><span> X (formerly Twitter)</span></a>
+</section>
+
+
+      
+
+
+  <nav class="pagination">
+    
+      <a href="https://raw.githack.com/mingyu272/Ben-Mingyu-Kim.github.io/armor-lab-preview/talks/2025-09-08-uga-seminar" class="pagination--pager" title="Real-Time and Near-Optimal Decision-Making in Multi-Robot Systems for Ocean Science
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<a href="/sitemap/">Sitemap</a>
+
+<!-- Support for MatJax -->
+<script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+<!-- Support for Plotly -->
+<script defer src='https://cdnjs.cloudflare.com/ajax/libs/plotly.js/3.0.1/plotly.min.js'></script>
+
+<!-- Support for Mermaid -->
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({startOnLoad:true, theme:'default'});
+    await mermaid.run({querySelector:'code.language-mermaid'});
+</script>
+
+<!-- end custom footer snippets -->
+
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+    <li><a href="https://raw.githack.com/mingyu272/Ben-Mingyu-Kim.github.io/armor-lab-preview/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">
+  &copy; 2026 Ben Kim, Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
+  Site last updated 2026-10-19
+</div>
+
+      </footer>
+    </div>
+
+    <script type="module" src="https://raw.githack.com/mingyu272/Ben-Mingyu-Kim.github.io/armor-lab-preview/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>
+
