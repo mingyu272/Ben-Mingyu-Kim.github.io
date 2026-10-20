@@ -1,4 +1,17 @@
-# Dates retain filename precision. Same-month entries have no asserted day-level chronology.
+# Dates use known month/year precision; same-month entries have no asserted day-level chronology.
+# The CDC item uses its announcement month, not an inferred acceptance day.
+- date: 2026-10
+  date_label: October 2026
+  id: fuad-cdc-2026-paper-accepted
+  title: Congratulations, Fuad! Paper accepted to CDC 2026
+  summary: Congratulations to Md Muhtasim Fuad! His paper, “Gamma-Laplace Surrogate for Variance Aware Sensor Placement
+    for Detecting Poisson Distributed Targets,” has been accepted to the 2026 IEEE Conference on Decision and Control
+    (CDC). The work will be presented in December 2026. We look forward to sharing it with the control community!
+  links:
+  - label: Read the paper (PDF) →
+    url: https://arxiv.org/pdf/2610.06265
+  - label: CDC 2026 →
+    url: https://cdc2026.ieeecss.org/
 - date: 2026-09
   date_label: September 2026
   id: gdot-expo-2026
