@@ -27,7 +27,8 @@ groups:
     research: Control systems, robotics, and their applications.
     experience: Professional experience in construction, designing electrical distribution systems and building
       wiring using AutoCAD and Revit.
-    photo_position: 50% 15%
+    photo_position: 50% 5%
+    photo_zoom: 1
   - name: Sotheara Oum
     role: Ph.D. Student
     department: Electrical and Computer Engineering
@@ -48,7 +49,8 @@ groups:
     research: Robotic control and simulation; perception and manipulation; motion planning and optimization; learning-based
       robotics.
     fun_fact: I enjoy exploring different cuisines, but garlic is where I draw the line.
-    photo_position: 65% 50%
+    photo_position: 88% 50%
+    photo_zoom: 2.5
 - title: Undergraduate Researchers
   placeholder: Undergraduate researcher profiles will be added here.
   members: []

@@ -1,7 +1,7 @@
 {% assign member = include.member %}
 <article class="armor-member" aria-labelledby="member-{{ member.name | slugify }}">
   <div class="armor-member-portrait">
-    {% if member.photo %}<img src="{{ member.photo | relative_url }}" alt="{{ member.photo_alt | default: member.name | escape }}" loading="lazy" width="480" height="600"{% if member.photo_position %} style="object-position:{{ member.photo_position | escape }}"{% endif %}>{% else %}<div class="armor-member-photo-pending"><span aria-hidden="true">{{ member.initials }}</span><p>Photo to be added</p></div>{% endif %}
+    {% if member.photo %}<img src="{{ member.photo | relative_url }}" alt="{{ member.photo_alt | default: member.name | escape }}" loading="lazy" width="160" height="160" style="--portrait-zoom:{{ member.photo_zoom | default: 1 }};{% if member.photo_position %}object-position:{{ member.photo_position | escape }};{% endif %}">{% else %}<div class="armor-member-photo-pending"><span aria-hidden="true">{{ member.initials }}</span><p>Photo to be added</p></div>{% endif %}
   </div>
   <div class="armor-member-content">
     <p class="armor-eyebrow">{{ member.role }}</p>
