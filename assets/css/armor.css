@@ -163,9 +163,10 @@ body.armor-legacy { padding-top:0; }
 
 /* Shared, data-driven student profiles. Keep portraits consistently sized. */
 .armor-members { display:grid; gap:35px; }
-.armor-member { display:grid; grid-template-columns:220px minmax(0,1fr); gap:35px; padding:30px; border:1px solid var(--line); align-items:start; }
-.armor-member-portrait img { display:block; width:100%; height:auto; aspect-ratio:4 / 5; object-fit:cover; background:var(--paper); }
-.armor-member-photo-pending { aspect-ratio:4 / 5; display:flex; flex-direction:column; justify-content:center; align-items:center; background:var(--paper); color:var(--muted); }
+.armor-member { display:grid; grid-template-columns:160px minmax(0,1fr); gap:35px; padding:30px; border:1px solid var(--line); align-items:start; }
+.armor-member-portrait { width:160px; height:160px; border-radius:50%; overflow:hidden; background:var(--paper); }
+.armor-member-portrait img { display:block; width:100%; height:100%; object-fit:cover; transform:scale(var(--portrait-zoom,1)); transform-origin:50% 45%; }
+.armor-member-photo-pending { width:100%; height:100%; display:flex; flex-direction:column; justify-content:center; align-items:center; background:var(--paper); color:var(--muted); }
 .armor-member-photo-pending>span { font:42px Georgia,serif; color:var(--navy); }
 .armor-member-photo-pending>p { font-size:12px; margin:15px 0 0; }
 .armor-member-content .armor-eyebrow { margin-bottom:10px; }
@@ -176,4 +177,4 @@ body.armor-legacy { padding-top:0; }
 .armor-member-education { padding:0; margin:0; list-style:none; }
 .armor-member-education li { margin-bottom:14px; }
 .armor-member-education strong { font-weight:600; color:var(--ink); }
-@media(max-width:700px) { .armor-member { grid-template-columns:1fr; gap:25px; padding:24px; } .armor-member-portrait { max-width:220px; } .armor-member-content h3 { font-size:28px; } }
+@media(max-width:700px) { .armor-member { grid-template-columns:1fr; gap:25px; padding:24px; } .armor-member-content h3 { font-size:28px; } }
