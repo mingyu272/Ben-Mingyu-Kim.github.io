@@ -10,25 +10,6 @@ groups:
 - title: Graduate Researchers
   placeholder: Graduate researcher profiles will be added here.
   members:
-  - name: Adom Akosua Addae Attah
-    role: Master’s Student
-    department: Electrical and Computer Engineering
-    institution: Georgia Southern University
-    location: Statesboro, USA
-    photo: /images/people/adom-akosua-addae-attah.jpg
-    photo_alt: Adom Akosua Addae Attah
-    initials: AA
-    education:
-    - degree: Master’s in Electrical and Computer Engineering
-      status: In progress
-      institution: Georgia Southern University, USA
-    - degree: Bachelor’s in Electrical/Electronic Engineering
-      institution: Kwame Nkrumah University of Science and Technology, Ghana
-    research: Control systems, robotics, and their applications.
-    experience: Professional experience in construction, designing electrical distribution systems and building
-      wiring using AutoCAD and Revit.
-    photo_position: 50% 5%
-    photo_zoom: 1
   - name: Sotheara Oum
     role: Ph.D. Student
     department: Electrical and Computer Engineering
@@ -51,6 +32,25 @@ groups:
     fun_fact: I enjoy exploring different cuisines, but garlic is where I draw the line.
     photo_position: 88% 50%
     photo_zoom: 2.5
+  - name: Adom Akosua Addae Attah
+    role: Master’s Student
+    department: Electrical and Computer Engineering
+    institution: Georgia Southern University
+    location: Statesboro, USA
+    photo: /images/people/adom-akosua-addae-attah.jpg
+    photo_alt: Adom Akosua Addae Attah
+    initials: AA
+    education:
+    - degree: Master’s in Electrical and Computer Engineering
+      status: In progress
+      institution: Georgia Southern University, USA
+    - degree: Bachelor’s in Electrical/Electronic Engineering
+      institution: Kwame Nkrumah University of Science and Technology, Ghana
+    research: Control systems, robotics, and their applications.
+    experience: Professional experience in construction, designing electrical distribution systems and building
+      wiring using AutoCAD and Revit.
+    photo_position: 50% 5%
+    photo_zoom: 1
   - name: Md Muhtasim Fuad
     role: Master’s Student
     department: Electrical and Computer Engineering
