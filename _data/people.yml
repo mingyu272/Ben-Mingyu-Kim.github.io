@@ -1,5 +1,4 @@
-# Add people to each members list using name, role, and optional url fields.
-# Example: members: [{name: Full Name, role: Graduate Researcher, url: https://example.com}]
+# Edit member profiles here. Photo paths are site-relative; optional sections render only when provided.
 director:
   name: Mingyu (Ben) Kim, Ph.D.
   role: Assistant Professor
@@ -8,12 +7,53 @@ director:
   photo: /images/circle_pic2.png
   research: Multi-robot systems, autonomous sensing, stochastic modeling, optimization, and control.
 groups:
-  - title: Graduate Researchers
-    placeholder: Graduate researcher profiles will be added here.
-    members: []
-  - title: Undergraduate Researchers
-    placeholder: Undergraduate researcher profiles will be added here.
-    members: []
-  - title: Alumni
-    placeholder: Alumni profiles and destinations will be added here.
-    members: []
+- title: Graduate Researchers
+  placeholder: Graduate researcher profiles will be added here.
+  members:
+  - name: Adom Akosua Addae Attah
+    role: Master’s Student
+    department: Electrical and Computer Engineering
+    institution: Georgia Southern University
+    location: Statesboro, USA
+    photo: /images/people/adom-akosua-addae-attah.jpg
+    photo_alt: Adom Akosua Addae Attah
+    initials: AA
+    education:
+    - degree: Master’s in Electrical and Computer Engineering
+      status: In progress
+      institution: Georgia Southern University, USA
+    - degree: Bachelor’s in Electrical/Electronic Engineering
+      institution: Kwame Nkrumah University of Science and Technology, Ghana
+    research: Control systems, robotics, and their applications.
+    experience: Professional experience in construction, designing electrical distribution systems and building
+      wiring using AutoCAD and Revit.
+    photo_position: 50% 5%
+    photo_zoom: 1
+  - name: Sotheara Oum
+    role: Ph.D. Student
+    department: Electrical and Computer Engineering
+    institution: Georgia Southern University
+    photo: /images/people/sotheara-oum.jpg
+    photo_alt: Sotheara Oum
+    initials: SO
+    education:
+    - degree: Ph.D. in Electrical and Computer Engineering
+      years: 2026–present
+      institution: Georgia Southern University, USA
+    - degree: M.Eng. in Mechatronics, Information and Communication Engineering
+      years: '2022'
+      institution: Institute of Technology of Cambodia, Cambodia
+    - degree: B.Eng. in Industrial and Mechanical Engineering
+      years: '2021'
+      institution: Institute of Technology of Cambodia, Cambodia
+    research: Robotic control and simulation; perception and manipulation; motion planning and optimization; learning-based
+      robotics.
+    fun_fact: I enjoy exploring different cuisines, but garlic is where I draw the line.
+    photo_position: 88% 50%
+    photo_zoom: 2.5
+- title: Undergraduate Researchers
+  placeholder: Undergraduate researcher profiles will be added here.
+  members: []
+- title: Alumni
+  placeholder: Alumni profiles and destinations will be added here.
+  members: []

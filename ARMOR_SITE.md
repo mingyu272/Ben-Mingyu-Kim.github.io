@@ -46,3 +46,7 @@ The homepage features the **unmanned-boat field-testing video**, supplied separa
 The boat MOV filename has no date, so its published filename, player caption, and provenance do not invent one. Both videos preserve portrait framing and use H.264/AAC, standard BT.709 color, and MP4 faststart for web playback. Original field-testing photographs remain available on Facilities.
 
 Both the boat Facilities player and homepage feature use the repository-hosted MP4 directly, with no Google Drive embed or sign-in requirement. The Facilities video appears immediately after its heading and description; supporting boat photographs are expandable below it. Every player includes a visible “Open or download video” link for browsers or preview proxies that cannot stream the embedded player.
+
+## Student profiles
+
+Graduate, undergraduate, and alumni profiles share `_includes/armor-member.html`. Edit their entries in `_data/people.yml`: `name`, `role`, `department`, `institution`, `photo`, `photo_alt`, `education`, and `research`. Optional `experience` and `fun_fact` fields render only when supplied. Education records use `degree`, `institution`, and optional `years` or `status`. Store student portraits in `images/people/` and set a site-relative path. Student portraits use matching 160 × 160 pixel circular frames on desktop and mobile. Optional `photo_position` and `photo_zoom` fields center each face using CSS without modifying the original image files. Missing portraits show a labeled placeholder rather than a broken image.

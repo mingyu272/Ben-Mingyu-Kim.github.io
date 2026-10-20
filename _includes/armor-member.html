@@ -1,0 +1,15 @@
+{% assign member = include.member %}
+<article class="armor-member" aria-labelledby="member-{{ member.name | slugify }}">
+  <div class="armor-member-portrait">
+    {% if member.photo %}<img src="{{ member.photo | relative_url }}" alt="{{ member.photo_alt | default: member.name | escape }}" loading="lazy" width="160" height="160" style="--portrait-zoom:{{ member.photo_zoom | default: 1 }};{% if member.photo_position %}object-position:{{ member.photo_position | escape }};{% endif %}">{% else %}<div class="armor-member-photo-pending"><span aria-hidden="true">{{ member.initials }}</span><p>Photo to be added</p></div>{% endif %}
+  </div>
+  <div class="armor-member-content">
+    <p class="armor-eyebrow">{{ member.role }}</p>
+    <h3 id="member-{{ member.name | slugify }}">{% if member.url %}<a href="{{ member.url | escape }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</h3>
+    {% if member.department or member.institution %}<p class="armor-member-affiliation">{{ member.department }}{% if member.department and member.institution %}<br>{% endif %}{{ member.institution }}{% if member.location %}<br>{{ member.location }}{% endif %}</p>{% endif %}
+    {% if member.education %}<h4>Academic background</h4><ul class="armor-member-education">{% for qualification in member.education %}<li><strong>{{ qualification.degree }}</strong>{% if qualification.years %} <span>({{ qualification.years }})</span>{% elsif qualification.status %} <span>({{ qualification.status }})</span>{% endif %}<br>{{ qualification.institution }}</li>{% endfor %}</ul>{% endif %}
+    {% if member.research %}<h4>Research interests</h4><p>{{ member.research }}</p>{% endif %}
+    {% if member.experience %}<h4>Professional experience</h4><p>{{ member.experience }}</p>{% endif %}
+    {% if member.fun_fact %}<h4>Beyond the lab</h4><p>{{ member.fun_fact }}</p>{% endif %}
+  </div>
+</article>
