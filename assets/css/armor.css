@@ -182,3 +182,5 @@ body.armor-legacy { padding-top:0; }
 .armor-member-motto { margin:0; padding:12px 18px; border-left:3px solid var(--gold); background:var(--paper); }
 .armor-member-motto p { font-style:italic; }
 .armor-member-motto cite { display:block; margin-top:10px; font-size:12px; font-style:normal; color:var(--muted); }
+
+.armor-news-links { display:flex; flex-wrap:wrap; gap:12px 24px; margin-top:18px; }

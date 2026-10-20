@@ -3,6 +3,7 @@
   <time class="armor-eyebrow" datetime="{{ include.item.date }}">{{ include.item.date_label }}</time>
   <h3>{{ include.item.title }}</h3>
   <p>{{ include.item.summary }}</p>
+  {% if include.item.links %}<div class="armor-news-links">{% for link in include.item.links %}<a class="armor-text-link" href="{{ link.url | escape }}">{{ link.label }}</a>{% endfor %}</div>{% endif %}
   {% unless include.compact %}{% if include.item.gallery %}
   <details class="armor-news-gallery"><summary>More photos from this event</summary>
     {% for photo in include.item.gallery %}<figure><img src="{{ photo.image | relative_url }}" alt="{{ photo.alt | escape }}" loading="lazy" width="{{ photo.width }}" height="{{ photo.height }}"><figcaption>{{ photo.caption }}</figcaption></figure>{% endfor %}
