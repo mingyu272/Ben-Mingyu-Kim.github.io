@@ -178,3 +178,7 @@ body.armor-legacy { padding-top:0; }
 .armor-member-education li { margin-bottom:14px; }
 .armor-member-education strong { font-weight:600; color:var(--ink); }
 @media(max-width:700px) { .armor-member { grid-template-columns:1fr; gap:25px; padding:24px; } .armor-member-content h3 { font-size:28px; } }
+
+.armor-member-motto { margin:0; padding:12px 18px; border-left:3px solid var(--gold); background:var(--paper); }
+.armor-member-motto p { font-style:italic; }
+.armor-member-motto cite { display:block; margin-top:10px; font-size:12px; font-style:normal; color:var(--muted); }

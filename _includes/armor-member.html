@@ -11,5 +11,6 @@
     {% if member.research %}<h4>Research interests</h4><p>{{ member.research }}</p>{% endif %}
     {% if member.experience %}<h4>Professional experience</h4><p>{{ member.experience }}</p>{% endif %}
     {% if member.fun_fact %}<h4>Beyond the lab</h4><p>{{ member.fun_fact }}</p>{% endif %}
+    {% if member.motto %}<h4>Personal motto</h4><blockquote class="armor-member-motto"><p>“{{ member.motto | escape }}”</p>{% if member.motto_attribution %}<cite>— {{ member.motto_attribution | escape }}</cite>{% endif %}</blockquote>{% endif %}
   </div>
 </article>

@@ -51,9 +51,49 @@ groups:
     fun_fact: I enjoy exploring different cuisines, but garlic is where I draw the line.
     photo_position: 88% 50%
     photo_zoom: 2.5
+  - name: Md Muhtasim Fuad
+    role: Master’s Student
+    department: Electrical and Computer Engineering
+    institution: Georgia Southern University
+    photo: /images/people/md-muhtasim-fuad.jpg
+    photo_alt: Md Muhtasim Fuad
+    initials: MF
+    education:
+    - degree: M.S. in Electrical and Computer Engineering
+      status: In progress
+      institution: Georgia Southern University, USA
+    - degree: B.Sc. in Mechanical Engineering
+      years: '2024'
+      institution: Bangladesh University of Engineering and Technology (BUET), Bangladesh
+    research: Robotics and autonomous systems, motion planning and optimization, stochastic sensing and sensor placement;
+      decision-making under uncertainty.
+    experience: Before pursuing research, I worked as an Assistant Engineer at a power plant and designed several
+      mechanical systems using SolidWorks.
+    fun_fact: I am also a competitive esports player.
+    photo_position: 50% 50%
+    photo_zoom: 2.4
 - title: Undergraduate Researchers
   placeholder: Undergraduate researcher profiles will be added here.
-  members: []
+  members:
+  - name: Khang Minh Pham
+    role: Undergraduate Researcher
+    department: Electrical Engineering
+    institution: Georgia Southern University
+    location: Statesboro, USA
+    photo: /images/people/khang-minh-pham.png
+    photo_alt: Khang Minh Pham
+    initials: KP
+    education:
+    - degree: Bachelor’s in Electrical Engineering
+      years: 2025–present
+      institution: Georgia Southern University, USA
+    research: Digital IC and VLSI design, FPGA/ASIC architectures, and hardware–software co-design for autonomous
+      robotics.
+    fun_fact: I enjoy drawing when engineering is overwhelming.
+    motto: My ambitions may be bigger than my abilities today, but that's exactly why I keep learning.
+    motto_attribution: Khang Pham | Personal Motto
+    photo_position: 50% 10%
+    photo_zoom: 1
 - title: Alumni
   placeholder: Alumni profiles and destinations will be added here.
   members: []
