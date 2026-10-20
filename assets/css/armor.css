@@ -160,3 +160,20 @@ body.armor-legacy { padding-top:0; }
 
 .armor-facility-photos { margin-top:25px; }
 .armor-facility-photos summary { cursor:pointer; font-size:14px; font-weight:600; margin-bottom:20px; }
+
+/* Shared, data-driven student profiles. Keep portraits consistently sized. */
+.armor-members { display:grid; gap:35px; }
+.armor-member { display:grid; grid-template-columns:220px minmax(0,1fr); gap:35px; padding:30px; border:1px solid var(--line); align-items:start; }
+.armor-member-portrait img { display:block; width:100%; height:auto; aspect-ratio:4 / 5; object-fit:cover; background:var(--paper); }
+.armor-member-photo-pending { aspect-ratio:4 / 5; display:flex; flex-direction:column; justify-content:center; align-items:center; background:var(--paper); color:var(--muted); }
+.armor-member-photo-pending>span { font:42px Georgia,serif; color:var(--navy); }
+.armor-member-photo-pending>p { font-size:12px; margin:15px 0 0; }
+.armor-member-content .armor-eyebrow { margin-bottom:10px; }
+.armor-member-content h3 { font:32px/1.2 Georgia,serif; margin-bottom:14px; }
+.armor-member-content h4 { font-size:13px; font-weight:700; letter-spacing:.02em; margin:22px 0 8px; }
+.armor-member-content p,.armor-member-education { font-size:14px; color:var(--muted); }
+.armor-member-content p { margin-bottom:0; }
+.armor-member-education { padding:0; margin:0; list-style:none; }
+.armor-member-education li { margin-bottom:14px; }
+.armor-member-education strong { font-weight:600; color:var(--ink); }
+@media(max-width:700px) { .armor-member { grid-template-columns:1fr; gap:25px; padding:24px; } .armor-member-portrait { max-width:220px; } .armor-member-content h3 { font-size:28px; } }
