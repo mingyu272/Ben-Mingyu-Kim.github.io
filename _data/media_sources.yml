@@ -53,3 +53,7 @@
   date_from_filename: null
   conversion: H.264 / AAC, yuv420p, HDR-to-SDR BT.709 tone mapping, MP4 faststart; portrait orientation preserved;
     maximum dimension 1280 px.
+- original_filename: lunch photo.jpeg
+  origin_archive: lunch photo.zip
+  published_image: /images/gallery/olive-garden-welcome-lunch.jpg
+  date_from_filename: null
