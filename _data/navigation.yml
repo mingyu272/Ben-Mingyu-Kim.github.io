@@ -6,6 +6,8 @@ main:
     url: /research/
   - title: News
     url: /news/
+  - title: Lab Life
+    url: /lab-life/
   - title: People
     url: /people/
   - title: Projects

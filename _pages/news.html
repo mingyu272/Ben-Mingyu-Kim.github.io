@@ -5,16 +5,7 @@ permalink: /news/
 intro: Research, events, and milestones from ARMOR Lab.
 ---
 <div class="armor-container armor-page-content">
-  <p><a class="armor-text-link" href="#lab-life">Explore the Lab Life gallery →</a></p>
+  <p id="lab-life"><a class="armor-text-link" href="{{ '/lab-life/' | relative_url }}">Explore the Lab Life gallery →</a></p>
   {% assign news_items = site.data.news | sort: 'date' | reverse %}
   <div class="armor-news-list">{% for item in news_items %}{% include armor-news-card.html item=item %}{% endfor %}</div>
-  <section class="armor-lab-gallery" id="lab-life" aria-labelledby="lab-life-heading">
-    <div class="armor-section-heading"><div><p class="armor-eyebrow">LIFE AT ARMOR</p><h2 id="lab-life-heading">Lab Life</h2></div><p>Celebrating our people and the moments that bring us together.</p></div>
-    <div class="armor-gallery-grid">{% for item in site.data.gallery %}
-      <figure class="armor-gallery-item" id="{{ item.id }}">
-        {% if item.image %}<a href="{{ item.image | relative_url }}" aria-label="View full photo: {{ item.title | escape }}"><img src="{{ item.image | relative_url }}" alt="{{ item.alt | escape }}" loading="lazy"{% if item.width %} width="{{ item.width }}" height="{{ item.height }}"{% endif %}></a>{% endif %}
-        <figcaption>{% if item.date_label %}<p class="armor-eyebrow">{{ item.date_label }}</p>{% endif %}<h3>{{ item.title }}</h3><p>{{ item.caption }}</p></figcaption>
-      </figure>
-    {% endfor %}</div>
-  </section>
 </div>
