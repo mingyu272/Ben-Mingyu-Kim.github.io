@@ -1,4 +1,4 @@
-# Lab Life gallery. Dates are shown only when supplied, not inferred from upload time.
+# Gallery dates come from supplied dates or original capture metadata, not upload time.
 - id: olive-garden-welcome-lunch
   title: A warm welcome over lunch
   image: /images/gallery/olive-garden-welcome-lunch.jpg
@@ -8,3 +8,6 @@
     The lunch was a chance to connect, encourage one another, and look ahead to the research journey together.
   width: 1350
   height: 1800
+  date: 2026-10
+  date_label: October 2026
+  date_source: DateTimeOriginal metadata in the original lunch photo.jpeg

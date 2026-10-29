@@ -1,0 +1,14 @@
+---
+layout: armor
+title: Lab Life
+permalink: /lab-life/
+intro: Celebrating our people and the moments that bring us together.
+---
+<div class="armor-container armor-page-content" id="lab-life">
+  <div class="armor-gallery-grid">{% for item in site.data.gallery %}
+    <figure class="armor-gallery-item" id="{{ item.id }}">
+      {% if item.image %}<a href="{{ item.image | relative_url }}" aria-label="View full photo: {{ item.title | escape }}"><img src="{{ item.image | relative_url }}" alt="{{ item.alt | escape }}" loading="lazy"{% if item.width %} width="{{ item.width }}" height="{{ item.height }}"{% endif %}></a>{% endif %}
+      <figcaption>{% if item.date %}<time class="armor-gallery-date armor-eyebrow" datetime="{{ item.date }}">{{ item.date_label }}</time>{% elsif item.date_label %}<p class="armor-eyebrow">{{ item.date_label }}</p>{% endif %}<h3>{{ item.title }}</h3><p>{{ item.caption }}</p></figcaption>
+    </figure>
+  {% endfor %}</div>
+</div>
