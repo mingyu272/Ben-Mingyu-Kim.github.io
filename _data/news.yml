@@ -1,5 +1,5 @@
-# Dates use known month/year precision; same-month entries have no asserted day-level chronology.
-# The CDC item uses its announcement month, not an inferred acceptance day.
+# Dates use known month/year precision; same-month entries have no asserted acceptance-day chronology.
+# New announcements within a month are placed after earlier ones for reverse display order.
 - date: 2026-10
   date_label: October 2026
   id: fuad-cdc-2026-paper-accepted
@@ -12,6 +12,24 @@
     url: https://arxiv.org/pdf/2610.06265
   - label: CDC 2026 →
     url: https://cdc2026.ieeecss.org/
+- date: 2026-10
+  date_label: October 2026
+  id: aep-cec-undergraduate-research-awards-2026-2027
+  title: Congratulations, Khang and Dale! AEP CEC Undergraduate Research Awards
+  summary: Congratulations to Khang Pham and Dale Drummond on receiving 2026–2027 AEP CEC Undergraduate Student
+    Research Awards! Each student has been awarded $1,750 to pursue research mentored by Dr. Mingyu Kim in the Department
+    of Electrical and Computer Engineering at Georgia Southern University. We’re excited to support their ideas
+    and look forward to seeing their projects develop!
+  awards:
+  - student: Khang Pham
+    classification: Sophomore (Honor Student)
+    project: Adaptive Information-Sufficient Distributed Decision Making for Scalable Multi-Robot Systems under
+      Nonstationary Stochastic Uncertainty
+    funding: $1,750
+  - student: Dale Drummond
+    classification: Senior
+    project: Adaptive Acoustic Enclosure Control for Environment-Aware Loudspeaker Response Shaping
+    funding: $1,750
 - date: 2026-09
   date_label: September 2026
   id: gdot-expo-2026

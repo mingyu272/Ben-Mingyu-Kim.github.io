@@ -4,7 +4,17 @@
   <h3>{{ include.item.title }}</h3>
   <p>{{ include.item.summary }}</p>
   {% if include.item.links %}<div class="armor-news-links">{% for link in include.item.links %}<a class="armor-text-link" href="{{ link.url | escape }}">{{ link.label }}</a>{% endfor %}</div>{% endif %}
-  {% unless include.compact %}{% if include.item.gallery %}
+  {% if include.compact and include.item.awards %}<a class="armor-text-link" href="{{ '/news/' | relative_url }}#{{ include.item.id }}">Explore their projects →</a>{% endif %}
+  {% unless include.compact %}
+  {% if include.item.awards %}<div class="armor-news-awards">{% for award in include.item.awards %}
+    <section class="armor-news-award" aria-labelledby="{{ include.item.id }}-{{ forloop.index }}">
+      <h4 id="{{ include.item.id }}-{{ forloop.index }}">{{ award.student }}</h4>
+      <p class="armor-award-classification">{{ award.classification }}</p>
+      <p><strong>Project:</strong> {{ award.project }}</p>
+      <p><strong>Research award:</strong> {{ award.funding }}</p>
+    </section>
+  {% endfor %}</div>{% endif %}
+  {% if include.item.gallery %}
   <details class="armor-news-gallery"><summary>More photos from this event</summary>
     {% for photo in include.item.gallery %}<figure><img src="{{ photo.image | relative_url }}" alt="{{ photo.alt | escape }}" loading="lazy" width="{{ photo.width }}" height="{{ photo.height }}"><figcaption>{{ photo.caption }}</figcaption></figure>{% endfor %}
   </details>

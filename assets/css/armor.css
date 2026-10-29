@@ -193,3 +193,9 @@ body.armor-legacy { padding-top:0; }
 .armor-gallery-item h3 { font-family:Georgia,serif; font-size:28px; }
 .armor-gallery-item figcaption>p:last-child { color:var(--muted); font-size:14px; margin:0; }
 @media(max-width:700px) { .armor-gallery-grid { grid-template-columns:1fr; } }
+
+.armor-news-awards { margin-top:25px; }
+.armor-news-award { border-top:1px solid var(--line); padding-top:20px; margin-top:20px; }
+.armor-news-award h4 { font-size:19px; margin:0 0 6px; }
+.armor-news-award p { font-size:14px; color:var(--muted); margin-bottom:12px; }
+.armor-news-award .armor-award-classification { font-size:12px; margin-bottom:16px; }
