@@ -56,3 +56,5 @@ News entries may include a `links` list with `label` and `url` fields for papers
 ## Lab Life gallery
 
 The News page includes a Lab Life section at `/news/#lab-life`, maintained in `_data/gallery.yml`. Each entry has `id`, `title`, `image`, `alt`, and `caption`; `width`, `height`, and `date_label` are optional. Store photos in `images/gallery/` and preserve their aspect ratio. Clicking an image opens the full photo. Add dates only when supplied; do not infer an event date from upload time.
+
+Award announcements can include an `awards` list with `student`, `classification`, `project`, and `funding`. News shows these details; the homepage keeps the summary and links to the complete announcement. Public news must omit student identification numbers. Dates use the announcement month unless an event date is supplied. Within a month, place newer announcements after earlier ones in the data file because the template reverses the stable date sort.
