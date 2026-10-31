@@ -30,6 +30,15 @@
     classification: Senior
     project: Adaptive Acoustic Enclosure Control for Environment-Aware Loudspeaker Response Shaping
     funding: $1,750
+- date: 2026-10
+  date_label: October 2026
+  id: directional-sensor-placement-sensors-paper-accepted
+  title: Paper accepted for publication in Sensors
+  summary: Congratulations to Mingyu Kim and co-authors! Their paper, “Toward Near-Optimal and Scalable Placement
+    and Orientation of Directional Sensors for Stochastic Directional Trajectory Detection,” has been accepted for
+    publication in Sensors. The work develops scalable methods for positioning and orienting directional sensors
+    to detect stochastic trajectories. The article is forthcoming and is not yet available online. We’ll share the
+    publication link once it is released!
 - date: 2026-09
   date_label: September 2026
   id: gdot-expo-2026
